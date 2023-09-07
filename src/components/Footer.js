@@ -12,7 +12,7 @@ function Footer() {
                         Descubre cómo nuestros productos pueden ayudarle a ser más productivo.
                     </p>
                     <div className="w-44 pt-6 md:pt-0">
-                        <a href="#" className="bg-red-500 justify-center text-center rounded-lg shadow px-10 py-3 flex items-center">
+                        <a href="/Contacto" className="bg-red-500 justify-center text-center rounded-lg shadow px-10 py-3 flex items-center">
                             Contacto
                         </a>
                     </div>

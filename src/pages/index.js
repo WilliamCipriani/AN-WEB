@@ -52,15 +52,15 @@ export default function Home() {
               Sobre Nosotros
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-300 text-justify">
-              En NA, estamos en el emocionante viaje de la innovación y la
-              excelencia en consultoría. Somos una empresa joven y apasionada,
-              dedicada a ofrecer soluciones de vanguardia en una amplia gama de
-              servicios, incluyendo desarrollo web, desarrollo de software,
-              análisis de datos, gestión de data centers y implementación de
-              arquitectura de redes. Nuestro compromiso es impulsar tu negocio
-              hacia el éxito digital, brindándote servicios que están a la
-              vanguardia de la tecnología y adaptados a tus necesidades
-              específicas. Nos enorgullecemos de trabajar estrechamente con
+              En AN, estamos en el emocionante viaje de la innovación y la
+              excelencia en consultoría Informática. Somos una empresa joven y
+              apasionada, dedicada a ofrecer soluciones de vanguardia en una
+              amplia gama de servicios, incluyendo desarrollo web, desarrollo de
+              software, análisis de datos, gestión de data centers e
+              implementación de arquitectura de redes. Nuestro compromiso es
+              impulsar tu negocio hacia el éxito digital, brindándote servicios
+              que están a la vanguardia de la tecnología y adaptados a tus
+              necesidades. Nos enorgullecemos de trabajar estrechamente con
               nuestros clientes para comprender sus metas y desafíos, y luego
               diseñar soluciones personalizadas que impulsen su crecimiento y
               eficiencia.
@@ -77,10 +77,10 @@ export default function Home() {
         <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 sm:grid-cols-2 xl:grid-cols-3 lg:grid-cols-3 ">
           <div className="w-full ">
             <div className="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600 animate-pulse">
-              <a href="#">
+              <a href="/Analisis-datos">
                 <img
-                  src="/image/analisis-datos.jpg"
-                  className="h-full w-full object-cover"
+                  src="/image/index/analisis-datos2.jpg"
+                  className="h-full w-full object-cover rounded-lg"
                 />
               </a>
             </div>
@@ -96,8 +96,8 @@ export default function Home() {
             <div className="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600 animate-pulse">
               <a href="#">
                 <img
-                  src="/image/web.jpg"
-                  className="h-full w-full object-cover"
+                  src="/image/index/web2.jpg"
+                  className="h-full w-full object-cover rounded-lg"
                 />
               </a>
             </div>
@@ -111,8 +111,8 @@ export default function Home() {
             <div className="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600 animate-pulse">
               <a href="#">
                 <img
-                  src="/image/data-center.jpg"
-                  className="h-full w-full object-cover"
+                  src="/image/index/dataCenter.jpg"
+                  className="h-full w-full object-cover rounded-lg"
                 />
               </a>
             </div>
@@ -127,8 +127,8 @@ export default function Home() {
             <div className="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600 animate-pulse">
               <a href="#">
                 <img
-                  src="/image/redes.jpg"
-                  className="w-full h-full object-cover"
+                  src="/image/index/redes2.jpg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
               </a>
             </div>
@@ -143,8 +143,8 @@ export default function Home() {
             <div className="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600 animate-pulse ">
               <a href="#">
                 <img
-                  src="/image/software.jpg"
-                  className="h-full w-full object-cover"
+                  src="/image/index/aplicaciones2.jpg"
+                  className="h-full w-full object-cover rounded-lg"
                 />
               </a>
             </div>
@@ -185,9 +185,9 @@ export default function Home() {
             >
               <path
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M9 5 5 1 1 5"
               />
             </svg>
@@ -199,7 +199,7 @@ export default function Home() {
           aria-labelledby="accordion-collapse-heading-1"
         >
           <div className="p-5 border border-b-0 border-gray-200 ">
-            <p className="mb-2 text-gray-500 dark:text-gray-400">
+            <p className="mb-2 text-gray-500 dark:text-gray-400 text-justify">
               Sí, hemos trabajado con una variedad de clientes en diversos
               sectores, incluyendo desarrollo web, desarrollo de software,
               análisis de datos y más. Nuestra experiencia nos ha permitido
@@ -230,9 +230,9 @@ export default function Home() {
             >
               <path
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M9 5 5 1 1 5"
               />
             </svg>
@@ -244,7 +244,7 @@ export default function Home() {
           aria-labelledby="accordion-collapse-heading-2"
         >
           <div className="p-5 border border-b-0 border-gray-200">
-            <p className="mb-2 text-gray-500 ">
+            <p className="mb-2 text-gray-500 text-justify">
               Nuestro enfoque de precios y tarifas se adapta a las necesidades
               de nuestros clientes. Utilizamos un enfoque personalizado en el
               que evaluamos la complejidad del proyecto, el alcance de trabajo
@@ -278,9 +278,9 @@ export default function Home() {
             >
               <path
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M9 5 5 1 1 5"
               />
             </svg>
@@ -292,7 +292,7 @@ export default function Home() {
           aria-labelledby="accordion-collapse-heading-3"
         >
           <div className="p-5 border border-t-0 border-gray-200">
-            <p className="mb-2 text-gray-500">
+            <p className="mb-2 text-gray-500 text-justify">
               Iniciar un proyecto con nosotros es un proceso sencillo y
               eficiente. El primer paso es ponerse en contacto con nosotros a
               través de nuestro formulario de contacto o por correo electrónico,
