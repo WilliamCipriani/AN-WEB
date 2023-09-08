@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import Link from 'next/link';
 
 function Header() {
     const [isNavOpen, setIsNavOpen] = useState(false);
@@ -55,52 +56,52 @@ function Header() {
             >
             <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-slate-50  md:light:bg-gray-900 light:border-gray-700">
                 <li>
-                <a
+                <Link
                     href="/"
                     className="block py-2 pl-3 pr-4 text-slate-950 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-slate-950 dark:hover:bg-gray-700 dark:hover:text-slate-950 md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                     INICIO
-                </a>
+                </Link>
                 </li>
                 <li>
-                <a
+                <Link
                     href="/Analisis-datos"
                     className="block py-2 pl-3 pr-4 text-slate-950 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-slate-950 dark:hover:bg-gray-700 dark:hover:text-slate-950 md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                     ANÁLISIS DE DATOS
-                </a>
+                </Link>
                 </li>
                 <li>
-                <a
+                <Link
                     href="/Desarrollo-web"
                     className="block py-2 pl-3 pr-4 text-slate-950 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-slate-950 dark:hover:bg-gray-700 dark:hover:text-slate-950 md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                     DESARROLLO WEB
-                </a>
+                </Link>
                 </li>
                 <li>
-                <a
+                <Link
                     href="#"
                     className="block py-2 pl-3 pr-4 text-slate-950 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-slate-950 dark:hover:bg-gray-700 dark:hover:text-slate-950 md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                     ARQUITECTURA DE REDES
-                </a>
+                </Link>
                 </li>
                 <li>
-                <a
+                <Link
                     href="#"
                     className="block py-2 pl-3 pr-4 text-slate-950 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-slate-950 dark:hover:bg-gray-700 dark:hover:text-slate-950 md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                     DATA CENTER
-                </a>
+                </Link>
                 </li>
                 <li>
-                <a
+                <Link
                     href="#"
                     className="block py-2 pl-3 pr-4 text-slate-950 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-slate-950 dark:hover:bg-gray-700 dark:hover:text-slate-950 md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                     DESARROLLO SOFTWARE
-                </a>
+                </Link>
                 </li>
             </ul>
             </div>

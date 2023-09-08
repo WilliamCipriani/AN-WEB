@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Link from 'next/link';
 import { useState } from "react";
 import { Inter } from "next/font/google";
 import Header from "@/components/Header";
@@ -77,12 +77,12 @@ export default function Home() {
         <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 sm:grid-cols-2 xl:grid-cols-3 lg:grid-cols-3 ">
           <div className="w-full ">
             <div className="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600 animate-pulse">
-              <a href="/Analisis-datos">
+              <Link href="/Analisis-datos">
                 <img
                   src="/image/index/analisis-datos2.jpg"
                   className="h-full w-full object-cover rounded-lg"
                 />
-              </a>
+              </Link>
             </div>
 
             <h1 className="text-2xl w-full h-2 mt-4 text-center">
@@ -94,12 +94,12 @@ export default function Home() {
 
           <div className="w-full ">
             <div className="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600 animate-pulse">
-              <a href="#">
+              <Link href="#">
                 <img
                   src="/image/index/web2.jpg"
                   className="h-full w-full object-cover rounded-lg"
                 />
-              </a>
+              </Link>
             </div>
             <h1 className="text-2xl w-full h-2 mt-4 text-center">
               Desarrollo Web
@@ -109,12 +109,12 @@ export default function Home() {
 
           <div className="w-full ">
             <div className="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600 animate-pulse">
-              <a href="#">
+              <Link href="#">
                 <img
                   src="/image/index/dataCenter.jpg"
                   className="h-full w-full object-cover rounded-lg"
                 />
-              </a>
+              </Link>
             </div>
 
             <h1 className="text-2xl w-full h-2 mt-4 text-center">
@@ -125,12 +125,12 @@ export default function Home() {
 
           <div className="w-full ">
             <div className="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600 animate-pulse">
-              <a href="#">
+              <Link href="#">
                 <img
                   src="/image/index/redes2.jpg"
                   className="w-full h-full object-cover rounded-lg"
                 />
-              </a>
+              </Link>
             </div>
 
             <h1 className="text-2xl w-full h-2 mt-4 text-center">
@@ -141,12 +141,12 @@ export default function Home() {
 
           <div className="w-full ">
             <div className="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600 animate-pulse ">
-              <a href="#">
+              <Link href="#">
                 <img
                   src="/image/index/aplicaciones2.jpg"
                   className="h-full w-full object-cover rounded-lg"
                 />
-              </a>
+              </Link>
             </div>
 
             <h1 className="text-2xl w-full h-2 mt-4 text-center">
