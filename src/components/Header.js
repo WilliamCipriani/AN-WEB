@@ -19,7 +19,7 @@ function Header() {
             <button
                 type="button"
                 onClick={() => window.location.href='/Contacto'}
-                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg px-6 py-3 text-center mr-3 md:mr-0"
             >
                 CONTACTO
             </button>
@@ -81,7 +81,7 @@ function Header() {
                 </li>
                 <li>
                 <Link
-                    href="#"
+                    href="/Arquitectura-redes"
                     className="block py-2 pl-3 pr-4 text-slate-950 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-slate-950 dark:hover:bg-gray-700 dark:hover:text-slate-950 md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                     ARQUITECTURA DE REDES
@@ -89,7 +89,7 @@ function Header() {
                 </li>
                 <li>
                 <Link
-                    href="#"
+                    href="/Data-center"
                     className="block py-2 pl-3 pr-4 text-slate-950 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-slate-950 dark:hover:bg-gray-700 dark:hover:text-slate-950 md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                     DATA CENTER
@@ -97,7 +97,7 @@ function Header() {
                 </li>
                 <li>
                 <Link
-                    href="#"
+                    href="/Desarrollo-software"
                     className="block py-2 pl-3 pr-4 text-slate-950 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-slate-950 dark:hover:bg-gray-700 dark:hover:text-slate-950 md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                     DESARROLLO SOFTWARE

@@ -105,16 +105,16 @@ export default function Contacto() {
                 </div>
             </div>
 
-            <section class="bg-white ">
-                <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-                    <div class="font-light text-gray-500 sm:text-lg ">
-                        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 ">Servicios de Consultoría Analítica</h2>
-                        <p class="mb-4">En una era donde los datos son el activo más valioso, nuestra consultoría analítica se pone a la vanguardia, guiando a las empresas a navegar con éxito en el vasto océano de información disponible. Con una combinación única de experiencia técnica y estratégica, estamos listos para ayudarte a transformar datos crudos en insights estratégicos que pueden impulsar tu negocio hacia adelante.</p>
+            <section className="bg-white ">
+                <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+                    <div className="font-light text-gray-500 sm:text-lg ">
+                        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 ">Servicios de Consultoría Analítica</h2>
+                        <p className="mb-4">En una era donde los datos son el activo más valioso, nuestra consultoría analítica se pone a la vanguardia, guiando a las empresas a navegar con éxito en el vasto océano de información disponible. Con una combinación única de experiencia técnica y estratégica, estamos listos para ayudarte a transformar datos crudos en insights estratégicos que pueden impulsar tu negocio hacia adelante.</p>
                         <p>Somos estrategas, diseñadores y desarrolladores. Innovadores y solucionadores de problemas. Lo suficientemente pequeño como para ser simple y rápido.</p>
                     </div>
-                    <div class="grid grid-cols-2 gap-4 mt-8 ">
-                        <img class="w-full h-96 rounded-lg bg-cover object-cover" src="/image/Analisis-datos/2.jpg" alt="office content 1" />
-                        <img class="mt-4 w-full h-96 lg:mt-10 rounded-lg bg-cover object-cover" src="/image/Analisis-datos/4.jpg" alt="office content 2" />
+                    <div className="grid grid-cols-2 gap-4 mt-8 ">
+                        <img className="w-full h-96 rounded-lg bg-cover object-cover" src="/image/Analisis-datos/2.jpg" alt="office content 1" />
+                        <img className="mt-4 w-full h-96 lg:mt-10 rounded-lg bg-cover object-cover" src="/image/Analisis-datos/4.jpg" alt="office content 2" />
                     </div>
                 </div>
             </section>
