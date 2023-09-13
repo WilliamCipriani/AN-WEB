@@ -12,8 +12,8 @@ function Header() {
     return (
         <header className="bg-slate-50 border-b border-gray-200 fixed w-full z-20 top-0 left-0  ">
         <div className="w-full flex flex-wrap items-center justify-around mx-auto p-4">
-            <div className="flex items-center flex-shrink-0 h-16">
-            <img src="/image/index/logo-2.png" className="h-16 " alt="AN Logo" />
+            <div className="flex items-center flex-shrink-0 h-14">
+                <img src="/image/index/logo-2.png" className="h-20 " alt="AN Logo" style={{ objectFit: 'contain' }}/>
             </div>
             <div className="flex md:order-2 justify-end">
             <button

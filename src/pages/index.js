@@ -79,7 +79,7 @@ export default function Home() {
             <div className="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600 animate-pulse">
               <Link href="/Analisis-datos">
                 <img
-                  src="/image/index/analisis-datos2.jpg"
+                  src="/image/index/analisis-datos.jpg"
                   className="h-full w-full object-cover rounded-lg"
                 />
               </Link>
@@ -96,7 +96,7 @@ export default function Home() {
             <div className="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600 animate-pulse">
               <Link href="#">
                 <img
-                  src="/image/index/web2.jpg"
+                  src="/image/index/web.jpg"
                   className="h-full w-full object-cover rounded-lg"
                 />
               </Link>
@@ -111,7 +111,7 @@ export default function Home() {
             <div className="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600 animate-pulse">
               <Link href="#">
                 <img
-                  src="/image/index/dataCenter.jpg"
+                  src="/image/index/data-center.jpg"
                   className="h-full w-full object-cover rounded-lg"
                 />
               </Link>
@@ -127,7 +127,7 @@ export default function Home() {
             <div className="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600 animate-pulse">
               <Link href="#">
                 <img
-                  src="/image/index/redes2.jpg"
+                  src="/image/index/redes.jpg"
                   className="w-full h-full object-cover rounded-lg"
                 />
               </Link>
@@ -143,7 +143,7 @@ export default function Home() {
             <div className="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600 animate-pulse ">
               <Link href="#">
                 <img
-                  src="/image/index/aplicaciones2.jpg"
+                  src="/image/index/software.jpg"
                   className="h-full w-full object-cover rounded-lg"
                 />
               </Link>
