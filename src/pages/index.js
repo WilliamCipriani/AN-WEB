@@ -94,7 +94,7 @@ export default function Home() {
 
           <div className="w-full ">
             <div className="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600 animate-pulse">
-              <Link href="#">
+              <Link href="/Desarrollo-web">
                 <img
                   src="/image/index/web.jpg"
                   className="h-full w-full object-cover rounded-lg"
@@ -109,7 +109,7 @@ export default function Home() {
 
           <div className="w-full ">
             <div className="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600 animate-pulse">
-              <Link href="#">
+              <Link href="Data-center">
                 <img
                   src="/image/index/data-center.jpg"
                   className="h-full w-full object-cover rounded-lg"
@@ -125,7 +125,7 @@ export default function Home() {
 
           <div className="w-full ">
             <div className="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600 animate-pulse">
-              <Link href="#">
+              <Link href="/Arquitectura-redes">
                 <img
                   src="/image/index/redes.jpg"
                   className="w-full h-full object-cover rounded-lg"
@@ -141,7 +141,7 @@ export default function Home() {
 
           <div className="w-full ">
             <div className="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600 animate-pulse ">
-              <Link href="#">
+              <Link href="Desarrollo-software">
                 <img
                   src="/image/index/software.jpg"
                   className="h-full w-full object-cover rounded-lg"
