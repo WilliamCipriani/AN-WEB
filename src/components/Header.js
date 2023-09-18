@@ -19,7 +19,7 @@ function Header() {
             <button
                 type="button"
                 onClick={() => window.location.href='/Contacto'}
-                className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg px-6 py-3 text-center mr-3 md:mr-0"
+                className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg px-6 py-3 text-center mr-3 md:mr-0 xs:text-sm xs:px-4 xs:py-2"
             >
                 CONTACTO
             </button>
