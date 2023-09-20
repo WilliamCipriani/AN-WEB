@@ -85,11 +85,16 @@ export default function DesarrolloWeb() {
               </div>
             </div>
 
-            <div id="animation-carousel" className="relative w-full">
+            <div id="animation-carousel" className="relative w-full" style={{ width: "54rem", height: "35rem" }}>
               <div className="relative h-full overflow-hidden rounded-lg">
                 {images.map((src, index) => (
                   <div key={index} className={`${activeIndex === index ? 'block' : 'hidden'} duration-200 ease-linear`} data-carousel-item>
-                    <img src={src} className="absolute block w-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" alt={`Imagen ${index + 1}`} />
+                    <img 
+                      src={src} 
+                      className={`absolute block w-full h-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 object-cover`} 
+                      alt={`Imagen ${index + 1}`} 
+                      style={{ width: "54rem", height: "35rem" }}
+                    />
                   </div>
                 ))}
               </div>

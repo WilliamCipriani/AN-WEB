@@ -127,8 +127,9 @@ export default function Home() {
             <div className="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600 animate-pulse">
               <Link href="/Arquitectura-redes">
                 <img
-                  src="/image/index/redes.jpg"
+                  src="/image/Redes/5.jpg"
                   className="w-full h-full object-cover rounded-lg"
+                  style={{ objectPosition: "top" }}
                 />
               </Link>
             </div>

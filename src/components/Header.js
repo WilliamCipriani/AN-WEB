@@ -12,14 +12,14 @@ function Header() {
     return (
         <header className="bg-slate-50 border-b border-gray-200 fixed w-full z-20 top-0 left-0  ">
         <div className="w-full flex flex-wrap items-center justify-around mx-auto p-4">
-            <div className="flex items-center flex-shrink-0 h-14 ">
-                <img src="/image/index/logo-2.png" className="h-14 sm:h-20" alt="AN Logo" style={{ objectFit: 'contain' }}/>
+            <div className="flex items-center flex-shrink-0 h-14 xs:h-10">
+                <img src="/image/index/logo-2.png" className="h-14 sm:h-20 xs:h-10" alt="AN Logo" style={{ objectFit: 'contain' }}/>
             </div>
             <div className="flex md:order-2 justify-end">
             <button
                 type="button"
                 onClick={() => window.location.href='/Contacto'}
-                className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg px-6 py-3 text-center mr-3 md:mr-0 xs:text-sm xs:px-4 xs:py-2"
+                className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 sm:text-lg sm:px-6 sm:py-3 sm:mr-0"
             >
                 CONTACTO
             </button>
