@@ -7,6 +7,51 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Contacto() {
 
+        const [requestStatus, setRequestStatus] = useState(null);
+
+        const [formState, setFormState] = useState({
+            name: "",
+            email: "",
+            subject: "",
+            message: ""
+        });
+        
+        const handleChange = (e) => {
+            const { name, value } = e.target;
+            setFormState({
+            ...formState,
+            [name]: value
+            });
+        };
+        
+        const handleSubmit = async (e) => {
+            e.preventDefault();
+            
+            try {
+            const response = await fetch('/api/sendEmail', {
+                method: 'POST',
+                headers: {
+                'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formState),
+            });
+        
+            if (!response.ok) {
+                throw new Error('Network response was not ok ' + response.statusText);
+            }
+
+            setRequestStatus('success');
+            setFormState({
+                    name: "",
+                    email: "",
+                    subject: "",
+                    message: ""
+                    });
+            } catch (error) {
+                setRequestStatus('error');
+            }
+        };
+
     return (
         <>
         <Header />
@@ -14,12 +59,15 @@ export default function Contacto() {
             <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
                 <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 ">Contacta con Nosotros</h2>
                 <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 sm:text-xl">¿Tienes un problema técnico? ¿Quiere enviar comentarios sobre una función beta? ¿Necesita detalles sobre nuestro plan Business? Haznos saber.</p>
-                <form action="#" className="space-y-8" >
+                <form action="#" className="space-y-8" onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 ">Nombre Completo</label>
                     <input
                     type="text"
                     id="name"
+                    name="name"
+                    value={formState.name}  
+                    onChange={handleChange}
                     className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
                     placeholder="nombre"
                     required
@@ -30,6 +78,9 @@ export default function Contacto() {
                     <input
                     type="email"
                     id="email"
+                    name="email"
+                    value={formState.email}  
+                    onChange={handleChange}
                     className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
                     placeholder="name@gmail.com"
                     required
@@ -40,6 +91,9 @@ export default function Contacto() {
                     <input
                     type="text"
                     id="subject"
+                    name="subject"
+                    value={formState.subject}  
+                    onChange={handleChange}
                     className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 "
                     placeholder="Permítenos saber en qué te podemos ayudar"
                     required
@@ -49,11 +103,28 @@ export default function Contacto() {
                     <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 ">Mensaje</label>
                     <textarea
                     id="message"
+                    name="message"
+                    value={formState.message}  
+                    onChange={handleChange}
                     rows="6"
                     className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 "
                     placeholder="Deja un comentario..."
                     ></textarea>
                 </div>
+                <div>
+                    {requestStatus === 'success' && (
+                        <div className="p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400" role="alert">
+                        <span className="font-medium">Success alert!</span> Your message was sent successfully.
+                        </div>
+                    )}
+                    
+                    {requestStatus === 'error' && (
+                        <div className="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+                        <span className="font-medium">Danger alert!</span> There was an error sending your message. Please try again.
+                        </div>
+                    )}
+                </div>
+
                 <button
                     type="submit"
                     className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-blue-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300"
