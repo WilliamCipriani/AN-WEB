@@ -1,8 +1,13 @@
 import Link from 'next/link';
 import { useState } from "react";
+import Slider from 'react-slick';
 import { Inter } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -64,6 +69,22 @@ export default function Home() {
     setOpenSection(openSection === section ? null : section);
   };
 
+  const data = [
+    { src: '/image/index/analisis-datos.jpg', alt: 'Analisis de Datos', link: '/Analisis-datos', title: 'Análisis de Datos' },
+    { src: '/image/index/web.jpg', alt: 'Desarrollo Web', link: '/Desarrollo-web', title: 'Desarrollo Web' },
+    { src: '/image/index/data-center.jpg', alt: 'Data Center', link: '/Data-center', title: 'Data Center' },
+    { src: '/image/Redes/5.jpg', alt: 'Arquitectura de Redes', link: '/Arquitectura-redes', title: 'Arquitectura de Redes' },
+    { src: '/image/index/software.jpg', alt: 'Desarrollo de Software', link: '/Desarrollo-software', title: 'Desarrollo de Software' }
+  ];
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1
+  };
+
 
 
   return (
@@ -123,98 +144,29 @@ export default function Home() {
       </div>
 
       <div className="container px-6 py-10 mx-auto ">
-        <h1 className="text-4xl font-bold tracking-tight text-black sm:text-6xl text-center">
+        <h1 className="text-4xl font-bold tracking-tight text-black sm:text-6xl text-center pt-10">
           Servicios
         </h1>
 
-        <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 sm:grid-cols-2 xl:grid-cols-3 lg:grid-cols-3 ">
-          <div className="w-full ">
-            <div className="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600 animate-pulse">
-              <Link href="/Analisis-datos">
-                <img
-                  src="/image/index/analisis-datos.jpg"
-                  className="h-full w-full object-cover rounded-lg"
-                />
+        <Slider {...settings}>
+        {data.map((item, idx) => (
+          <div key={idx} className="w-full px-1 pt-10">
+            <div className="w-full h-80 bg-gray-300 rounded-lg dark:bg-gray-600">
+              <Link href={item.link}>
+                <img src={item.src} alt={item.alt} className="h-full w-full object-cover rounded-lg cursor-pointer"/>
               </Link>
             </div>
-
-            <h1 className="text-2xl w-full h-2 mt-4 text-center">
-              {" "}
-              Análisis de Datos
-            </h1>
+            <h1 className="text-2xl mt-4 text-center">{item.title}</h1>
             <p className="w-24 h-2 mt-4 "></p>
           </div>
-
-          <div className="w-full ">
-            <div className="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600 animate-pulse">
-              <Link href="/Desarrollo-web">
-                <img
-                  src="/image/index/web.jpg"
-                  className="h-full w-full object-cover rounded-lg"
-                />
-              </Link>
-            </div>
-            <h1 className="text-2xl w-full h-2 mt-4 text-center">
-              Desarrollo Web
-            </h1>
-            <p className="w-24 h-2 mt-4 "></p>
-          </div>
-
-          <div className="w-full ">
-            <div className="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600 animate-pulse">
-              <Link href="Data-center">
-                <img
-                  src="/image/index/data-center.jpg"
-                  className="h-full w-full object-cover rounded-lg"
-                />
-              </Link>
-            </div>
-
-            <h1 className="text-2xl w-full h-2 mt-4 text-center">
-              Data Center
-            </h1>
-            <p className="w-24 h-2 mt-4 "></p>
-          </div>
-
-          <div className="w-full ">
-            <div className="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600 animate-pulse">
-              <Link href="/Arquitectura-redes">
-                <img
-                  src="/image/Redes/5.jpg"
-                  className="w-full h-full object-cover rounded-lg"
-                  style={{ objectPosition: "top" }}
-                />
-              </Link>
-            </div>
-
-            <h1 className="text-2xl w-full h-2 mt-4 text-center">
-              Arquitectura de Redes
-            </h1>
-            <p className="w-24 h-2 mt-4"></p>
-          </div>
-
-          <div className="w-full ">
-            <div className="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600 animate-pulse ">
-              <Link href="Desarrollo-software">
-                <img
-                  src="/image/index/software.jpg"
-                  className="h-full w-full object-cover rounded-lg"
-                />
-              </Link>
-            </div>
-
-            <h1 className="text-2xl w-full h-2 mt-4 text-center">
-              Desarrollo de Software
-            </h1>
-            <p className="w-24 h-2 mt-4 "></p>
-          </div>
-        </div>
+        ))}
+        </Slider>
       </div>
 
-      <h1 className="pt-36	 text-4xl font-bold tracking-tight text-black sm:text-6xl text-center">
+      <h1 className="pt-36 text-4xl font-bold tracking-tight text-black sm:text-6xl text-center">
         Motivos para confiar en nosotros
       </h1>
-      
+
       <section className='grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 max-w-screen-xl mx-auto pt-10' >
       {Icons.map((icon) => (
           <div key={icon.image} className="flex flex-col items-center justify-center" style={{ width: '310px', height: '184.4px' }}>
@@ -241,12 +193,12 @@ export default function Home() {
       <div
         id="accordion-collapse"
         data-accordion="collapse"
-        className="max-w-xl mx-auto py-10 "
+        className="max-w-xl mx-auto py-10 pt-36"
       >
-        <h1 className="text-4xl font-bold tracking-tight text-black sm:text-6xl text-center py-6">
+        <h1 className="text-4xl font-bold tracking-tight text-black sm:text-6xl text-center py-6 pb-16">
           Preguntas frecuentes
         </h1>
-        <h2 id="accordion-collapse-heading-1">
+        <h2 id="accordion-collapse-heading-1 ">
           <button
             type="button"
             onClick={() => toggleSection(1)}
