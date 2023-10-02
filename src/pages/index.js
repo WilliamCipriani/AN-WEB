@@ -6,12 +6,65 @@ import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const Icons = [
+  {
+    image: "/svg/1.svg",
+    text: "Líderes en diseños y programación de páginas web y tiendas online"
+  },
+  {
+    image: "/svg/2.svg",
+    text: "Líderes en diseños y programación de páginas web y tiendas online"
+  },
+  {
+    image: "/svg/3.svg",
+    text: "Líderes en diseños y programación de páginas web y tiendas online"
+  },
+  {
+    image: "/svg/4.svg",
+    text: "Líderes en diseños y programación de páginas web y tiendas online"
+  },
+  {
+    image: "/svg/5.svg",
+    text: "Líderes en diseños y programación de páginas web y tiendas online"
+  },
+  {
+    image: "/svg/6.svg",
+    text: "Líderes en diseños y programación de páginas web y tiendas online"
+  },
+  {
+    image: "/svg/7.svg",
+    text: "Líderes en diseños y programación de páginas web y tiendas online"
+  },
+  {
+    image: "/svg/8.svg",
+    text: "Líderes en diseños y programación de páginas web y tiendas online"
+  },
+  {
+    image: "/svg/9.svg",
+    text: "Líderes en diseños y programación de páginas web y tiendas online"
+  },
+  {
+    image: "/svg/10.svg",
+    text: "Líderes en diseños y programación de páginas web y tiendas online"
+  },
+  {
+    image: "/svg/11.svg",
+    text: "Líderes en diseños y programación de páginas web y tiendas online"
+  },
+  {
+    image: "/svg/12.svg",
+    text: "Líderes en diseños y programación de páginas web y tiendas online"
+  },
+]
+
 export default function Home() {
   const [openSection, setOpenSection] = useState(null);
 
   const toggleSection = (section) => {
     setOpenSection(openSection === section ? null : section);
   };
+
+
 
   return (
     <>
@@ -158,6 +211,33 @@ export default function Home() {
         </div>
       </div>
 
+      <h1 className="pt-36	 text-4xl font-bold tracking-tight text-black sm:text-6xl text-center">
+        Motivos para confiar en nosotros
+      </h1>
+      
+      <section className='grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 max-w-screen-xl mx-auto pt-10' >
+      {Icons.map((icon) => (
+          <div key={icon.image} className="flex flex-col items-center justify-center" style={{ width: '310px', height: '184.4px' }}>
+                  <div  className="flex flex-col items-center justify-center" style={{ width: '310px', height: '184.4px' }}>
+                      <div className="p-4" data-id="d38016c" data-element_type="widget" data-widget_type="icon-box.default">
+                          <div className="flex flex-col items-center justify-center">
+                              <div className="w-21 h-21 rounded-full overflow-hidden flex items-center justify-center">
+                                  <img src={icon.image} alt='Imagen Descriptiva' className="object-cover"/> 
+                              </div>
+                              <div className="mt-2 text-center text-sm">
+                                  <p>{icon.text}</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+          
+          </div>
+        ))}
+      </section>
+     
+      
+      
+
       <div
         id="accordion-collapse"
         data-accordion="collapse"
@@ -259,6 +339,7 @@ export default function Home() {
             </p>
           </div>
         </div>
+
         <h2 id="accordion-collapse-heading-3">
           <button
             type="button"
@@ -287,6 +368,10 @@ export default function Home() {
             </svg>
           </button>
         </h2>
+
+        
+
+
         <div
           id="accordion-collapse-body-3"
           className={openSection === 3 ? "" : "hidden"}
