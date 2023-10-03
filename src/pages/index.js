@@ -4,8 +4,7 @@ import Slider from 'react-slick';
 import { Inter } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
+
 
 
 
@@ -82,14 +81,30 @@ export default function Home() {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive: [ 
+      {
+        breakpoint: 780, 
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   };
+  
 
 
 
   return (
     <>
       <Header />
+
       <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
         <img
           src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
@@ -143,8 +158,10 @@ export default function Home() {
         </div>
       </div>
 
+      {/*Seccion de Servicios */} 
+
       <div className="container px-6 py-10 mx-auto ">
-        <h1 className="text-4xl font-bold tracking-tight text-black sm:text-6xl text-center pt-10">
+        <h1 className="text-4xl font-bold tracking-tight text-black sm:text-6xl text-center pt-10 pb-10">
           Servicios
         </h1>
 
@@ -167,14 +184,16 @@ export default function Home() {
         Motivos para confiar en nosotros
       </h1>
 
-      <section className='grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 max-w-screen-xl mx-auto pt-10' >
+      {/*Seccion de iconos */}    
+      <section className='grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 max-w-screen-xl mx-auto pt-10 sm:mx-auto' >
       {Icons.map((icon) => (
-          <div key={icon.image} className="flex flex-col items-center justify-center" style={{ width: '310px', height: '184.4px' }}>
+          <div key={icon.image} className="flex flex-col items-center justify-center sm:w-full md:w-[310px]">
+
                   <div  className="flex flex-col items-center justify-center" style={{ width: '310px', height: '184.4px' }}>
                       <div className="p-4" data-id="d38016c" data-element_type="widget" data-widget_type="icon-box.default">
                           <div className="flex flex-col items-center justify-center">
                               <div className="w-21 h-21 rounded-full overflow-hidden flex items-center justify-center">
-                                  <img src={icon.image} alt='Imagen Descriptiva' className="object-cover"/> 
+                                  <img src={icon.image} alt='Imagen Descriptiva' className="object-cover rotate-on-hover cursor-pointer"/> 
                               </div>
                               <div className="mt-2 text-center text-sm">
                                   <p>{icon.text}</p>
@@ -187,9 +206,7 @@ export default function Home() {
         ))}
       </section>
      
-      
-      
-
+      {/*Seccion de preguntas frecuentes */} 
       <div
         id="accordion-collapse"
         data-accordion="collapse"

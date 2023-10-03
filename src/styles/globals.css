@@ -36,3 +36,13 @@ body {
 .slick-prev:before, .slick-next:before {
   color: black !important; /* Cambia el color de las flechas a negro */
 }
+
+.rotate-on-hover {
+  transition: transform 0.5s; /* Transición suave */
+  transform-style: preserve-3d; /* Asegura que se preserve el estilo 3D */
+}
+
+.rotate-on-hover:hover {
+  transform: rotateY(180deg); /* Giro de 180 grados en el eje Y */
+}
+
