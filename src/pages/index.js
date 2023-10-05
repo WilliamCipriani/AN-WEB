@@ -13,51 +13,51 @@ const inter = Inter({ subsets: ["latin"] });
 const Icons = [
   {
     image: "/svg/1.svg",
-    text: "Líderes en diseños y programación de páginas web y tiendas online"
+    text: "Expertos emergentes en diseño y desarrollo de sitios web"
   },
   {
     image: "/svg/2.svg",
-    text: "Líderes en diseños y programación de páginas web y tiendas online"
+    text: "Sitios web optimizados para destacar en los resultados de búsqueda de Google"
   },
   {
     image: "/svg/3.svg",
-    text: "Líderes en diseños y programación de páginas web y tiendas online"
+    text: "Diseños innovadores, cautivadores y con interactividad dinámica."
   },
   {
     image: "/svg/4.svg",
-    text: "Líderes en diseños y programación de páginas web y tiendas online"
+    text: "Diseño web responsivo para smartphones y tablets."
   },
   {
     image: "/svg/5.svg",
-    text: "Líderes en diseños y programación de páginas web y tiendas online"
+    text: "Formación para gestionar con eficacia el contenido de tu sitio web."
   },
   {
     image: "/svg/6.svg",
-    text: "Líderes en diseños y programación de páginas web y tiendas online"
+    text: "Establecemos alianzas duraderas con nuestros clientes."
   },
   {
     image: "/svg/7.svg",
-    text: "Líderes en diseños y programación de páginas web y tiendas online"
+    text: "Nuestros clientes consistentemente expresan su elevada satisfacción con nuestros servicios."
   },
   {
     image: "/svg/8.svg",
-    text: "Líderes en diseños y programación de páginas web y tiendas online"
+    text: "Nos enfocamos íntegramente en ofrecer la máxima calidad."
   },
   {
     image: "/svg/9.svg",
-    text: "Líderes en diseños y programación de páginas web y tiendas online"
+    text: "Equipo de profesionales experimentados y altamente capacitados."
   },
   {
     image: "/svg/10.svg",
-    text: "Líderes en diseños y programación de páginas web y tiendas online"
+    text: "Soporte técnico de excelencia y respuesta ágil."
   },
   {
     image: "/svg/11.svg",
-    text: "Líderes en diseños y programación de páginas web y tiendas online"
+    text: "Propuestas valiosas a precios competitivos."
   },
   {
     image: "/svg/12.svg",
-    text: "Líderes en diseños y programación de páginas web y tiendas online"
+    text: "Monitoreo y gestión continua de su sitio web."
   },
 ]
 
@@ -98,8 +98,6 @@ export default function Home() {
     ]
   };
   
-
-
 
   return (
     <>
