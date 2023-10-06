@@ -85,7 +85,7 @@ export default function DesarrolloWeb() {
               </div>
             </div>
 
-            <div id="animation-carousel" className="relative w-full" style={{ width: "54rem", height: "35rem" }}>
+            <div id="animation-carousel" className="relative w-full" style={{ width: "40rem", height: "30rem" }}>
               <div className="relative h-full overflow-hidden rounded-lg">
                 {images.map((src, index) => (
                   <div key={index} className={`${activeIndex === index ? 'block' : 'hidden'} duration-200 ease-linear`} data-carousel-item>
@@ -93,7 +93,7 @@ export default function DesarrolloWeb() {
                       src={src} 
                       className={`absolute block w-full h-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 object-cover`} 
                       alt={`Imagen ${index + 1}`} 
-                      style={{ width: "54rem", height: "35rem" }}
+                      style={{ width: "40rem", height: "30rem" }}
                     />
                   </div>
                 ))}

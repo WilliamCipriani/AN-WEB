@@ -70,8 +70,7 @@ export default function ArquitecturaRedes() {
               src="/image/Redes/2.jpg"
               alt="Product screenshot"
               className="w-[40rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[50rem] md:-ml-4 lg:-ml-0"
-              width={2432}
-              height={1442}
+              style={{maxWidth: '650px', maxHeight: '600px'}}
             />
           </div>
         </div>

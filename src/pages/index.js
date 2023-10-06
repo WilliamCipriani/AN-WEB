@@ -4,8 +4,7 @@ import Slider from 'react-slick';
 import { Inter } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-
-
+import Social from "@/components/Social";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -77,9 +76,10 @@ export default function Home() {
   ];
 
   const settings = {
+    autoplay: true,
+    utoplaySpeed: 5000,
     dots: true,
     infinite: true,
-    speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [ 
@@ -159,7 +159,7 @@ export default function Home() {
       {/*Seccion de Servicios */} 
 
       <div className="container px-6 py-10 mx-auto ">
-        <h1 className="text-4xl font-bold tracking-tight text-black sm:text-6xl text-center pt-10 pb-10">
+        <h1 className="text-4xl font-bold tracking-tight text-black sm:text-6xl text-center pt-10 pb-10" style={{ color: '#0E3147' }}>
           Servicios
         </h1>
 
@@ -171,14 +171,14 @@ export default function Home() {
                 <img src={item.src} alt={item.alt} className="h-full w-full object-cover rounded-lg cursor-pointer"/>
               </Link>
             </div>
-            <h1 className="text-2xl mt-4 text-center">{item.title}</h1>
+            <h1 className="text-2xl mt-4 text-center" style={{ color: '#0E3147' }}>{item.title}</h1>
             <p className="w-24 h-2 mt-4 "></p>
           </div>
         ))}
         </Slider>
       </div>
 
-      <h1 className="pt-36 text-4xl font-bold tracking-tight text-black sm:text-6xl text-center">
+      <h1 className="pt-36 text-4xl font-bold tracking-tight text-black sm:text-6xl text-center" style={{ color: '#0E3147' }}>
         Motivos para confiar en nosotros
       </h1>
 
@@ -193,7 +193,7 @@ export default function Home() {
                               <div className="w-21 h-21 rounded-full overflow-hidden flex items-center justify-center">
                                   <img src={icon.image} alt='Imagen Descriptiva' className="object-cover rotate-on-hover cursor-pointer"/> 
                               </div>
-                              <div className="mt-2 text-center text-sm">
+                              <div className="mt-2 text-center text-sm" style={{ color: '#0E3147' }}>
                                   <p>{icon.text}</p>
                               </div>
                           </div>
@@ -210,7 +210,7 @@ export default function Home() {
         data-accordion="collapse"
         className="max-w-xl mx-auto py-10 pt-36"
       >
-        <h1 className="text-4xl font-bold tracking-tight text-black sm:text-6xl text-center py-6 pb-16">
+        <h1 className="text-4xl font-bold tracking-tight text-black sm:text-6xl text-center py-6 pb-16" style={{ color: '#0E3147' }}>
           Preguntas frecuentes
         </h1>
         <h2 id="accordion-collapse-heading-1 ">
@@ -363,6 +363,7 @@ export default function Home() {
         </div>
       </div>
 
+      <Social /> 
       <Footer />
     </>
   );
