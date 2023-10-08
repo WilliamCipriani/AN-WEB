@@ -49,7 +49,7 @@ export default function Contacto() {
                         <h2 className="text-base font-semibold leading-7 text-indigo-600">
                             Servicios tecnológicos
                         </h2>
-                        <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                        <p className="mt-2 text-3xl font-bold tracking-tight text-custon-blue sm:text-4xl">
                             Consultoría Análisis de Datos.
                         </p>
                         <p className="mt-6 text-lg leading-8 text-gray-600 text-justify">
@@ -74,11 +74,10 @@ export default function Contacto() {
                 </div>
             </div>
 
-
-            <div className="bg-white py-24 sm:py-32">
+            <div className="bg-white py-24 sm:py-6">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-2xl lg:text-center">
-                    <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                    <p className="mt-2 text-3xl font-bold tracking-tight text-custon-blue sm:text-4xl">
                         ¿Qué hace una Consultora de Análisis de Datos?
                     </p>
                     <p className="mt-6 text-lg leading-8 text-gray-600">
@@ -90,7 +89,7 @@ export default function Contacto() {
                         {features.map((feature) => (
                         <div key={feature.name} className="relative pl-16">
                             <dt className="text-base font-semibold leading-7 text-gray-900">
-                            <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                            <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-custom-orange">
                                 <feature.icon className="h-6 w-6 text-white" aria-hidden="true" />
                             </div>
                             {feature.name}
@@ -106,9 +105,9 @@ export default function Contacto() {
             <section className="bg-white ">
                 <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
                     <div className="font-light text-gray-500 sm:text-lg ">
-                        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 ">Servicios de Consultoría Analítica</h2>
-                        <p className="mb-4">En una era donde los datos son el activo más valioso, nuestra consultoría analítica se pone a la vanguardia, guiando a las empresas a navegar con éxito en el vasto océano de información disponible. Con una combinación única de experiencia técnica y estratégica, estamos listos para ayudarte a transformar datos crudos en insights estratégicos que pueden impulsar tu negocio hacia adelante.</p>
-                        <p>Somos estrategas, diseñadores y desarrolladores. Innovadores y solucionadores de problemas. Lo suficientemente pequeño como para ser simple y rápido.</p>
+                        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-custon-blue ">Servicios de Consultoría Analítica</h2>
+                        <p className="mb-4 text-gray-700">En una era donde los datos son el activo más valioso, nuestra consultoría analítica se pone a la vanguardia, guiando a las empresas a navegar con éxito en el vasto océano de información disponible. Con una combinación única de experiencia técnica y estratégica, estamos listos para ayudarte a transformar datos crudos en insights estratégicos que pueden impulsar tu negocio hacia adelante.</p>
+                        <p className="text-gray-700">Somos estrategas, diseñadores y desarrolladores. Innovadores y solucionadores de problemas. Lo suficientemente pequeño como para ser simple y rápido.</p>
                     </div>
                     <div className="grid grid-cols-2 gap-4 mt-8 ">
                         <img className="w-full h-96 rounded-lg bg-cover object-cover" src="/image/Analisis-datos/2.jpg" alt="office content 1" />

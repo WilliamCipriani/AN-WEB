@@ -1,5 +1,5 @@
-import React from "react";
 import Link from 'next/link';
+import { FaFacebook, FaInstagram } from 'react-icons/fa';
 
 function Footer() {
     return (
@@ -12,10 +12,26 @@ function Footer() {
                     <p className="w-full md:w-2/3 text-gray-400">
                         Descubre cómo nuestros productos pueden ayudarle a ser más productivo.
                     </p>
-                    <div className="w-44 pt-6 md:pt-0">
-                        <Link href="/Contacto" className="bg-red-500 justify-center text-center rounded-lg shadow px-10 py-3 flex items-center">
-                            Contacto
-                        </Link>
+                    <div className="space-y-4 md:space-y-0 md:space-x-12">
+                        <div className="w-44 pt-6 md:pt-0 md:mb-4">
+                            <Link href="/Contacto" className="bg-red-500 justify-center text-center rounded-lg shadow px-10 py-3 flex items-center">
+                                Contacto
+                            </Link>
+                        </div>
+                        <div className="flex items-center space-x-6 md:mt-4">
+                            <a href="https://www.facebook.com/tuPagina" target="_blank" rel="noopener noreferrer">
+                                <FaFacebook size={28} />
+                            </a>
+                            <a href="https://www.instagram.com/tuPagina" target="_blank" rel="noopener noreferrer">
+                                <FaInstagram size={28} />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div className="mt-8 flex flex-col md:flex-row md:justify-between">
+                    <div className="text-gray-400">
+                        <p>Email: serviciotecnico@anserviciostecnologicos.com</p>
+                        <p>Teléfono: +51 943 980 740</p>
                     </div>
                 </div>
             </div>

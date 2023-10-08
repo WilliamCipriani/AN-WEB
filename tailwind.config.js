@@ -10,11 +10,17 @@ module.exports = {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
-        transformOrigin: {
-          '0': '0%',
-        }, 
+      transformOrigin: {
+        '0': '0%',
+      },
+      backgroundColor: {
+        'custom-orange': '#F2AF2A',
+      },
+      textColor: {
+        'custon-blue': '#0E3147'
+      }, 
     },
   },
   variants: {},

@@ -10,7 +10,7 @@ function Social() {
             <div data-dial-init className="fixed right-6 bottom-6 group">
                 <div id="speed-dial-menu-default" className={`flex flex-col items-center ${isMenuOpen ? 'block' : 'hidden'} mb-4 space-y-2`}>
                     <Link 
-                        href="https://wa.me/984861294?text=Hola!%20Me%20gustaría%20obtener%20más%20información."
+                        href="https://wa.me/943980740?text=Hola!%20Me%20gustaría%20obtener%20más%20información."
                         target="_blank" 
                         rel="noopener noreferrer"
                         data-tooltip-target="tooltip-share" 

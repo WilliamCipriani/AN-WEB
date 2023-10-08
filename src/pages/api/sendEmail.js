@@ -17,7 +17,7 @@ export default async (req, res) => {
         
             const mailOptions = {
                 from: email,
-                to: 'wjcipriani@typsa.es', // tu correo donde quieres recibir los mensajes
+                to: 'jflorian@anserviciostecnologicos.com,esanchez@anserviciostecnologicos.com,serviciotecnico@anserviciostecnologicos.com,ventas@anserviciostecnologicos.com', // tu correo donde quieres recibir los mensajes
                 subject: `Nuevo mensaje de: ${name} - Asunto: ${subject}`,
                 text: message,
             };

@@ -51,7 +51,7 @@ export default function ArquitecturaRedes() {
                 <h2 className="text-base font-semibold leading-7 text-indigo-600">
                   Servicios tecnológicos
                 </h2>
-                <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                <p className="mt-2 text-3xl font-bold tracking-tight text-custon-blue sm:text-4xl">
                   Diseño e implementación de Arquitectura de Redes.
                 </p>
                 <p className="mt-6 text-lg leading-8 text-gray-600 text-justify">
@@ -76,10 +76,10 @@ export default function ArquitecturaRedes() {
         </div>
       </div>
 
-      <div className="bg-white py-24 sm:py-32">
+      <div className="bg-white py-24 sm:py-6">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:text-center">
-            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            <p className="mt-2 text-3xl font-bold tracking-tight text-custon-blue sm:text-4xl">
               ¿Qué hace una Consultora de Diseño e Implementación de
               Arquitectura de Redes?
             </p>
@@ -96,7 +96,7 @@ export default function ArquitecturaRedes() {
               {features.map((feature) => (
                 <div key={feature.name} className="relative pl-16">
                   <dt className="text-base font-semibold leading-7 text-gray-900">
-                    <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                    <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-custom-orange">
                       <feature.icon
                         className="h-6 w-6 text-white"
                         aria-hidden="true"
@@ -117,10 +117,10 @@ export default function ArquitecturaRedes() {
       <section className="bg-white ">
         <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
           <div className="font-light text-gray-500 sm:text-lg ">
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 ">
+            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-custon-blue ">
               Servicios de Consultoría en Arquitectura de Redes
             </h2>
-            <p className="mb-4">
+            <p className="mb-4 text-gray-700">
                 En una era donde la conectividad y la infraestructura de redes son
                 la columna vertebral de cualquier empresa exitosa, nuestra
                 consultoría se posiciona a la vanguardia, asistiendo a las
@@ -130,7 +130,7 @@ export default function ArquitecturaRedes() {
                 ayudarte a diseñar e implementar soluciones de red que pueden
                 llevar tu negocio al próximo nivel.
             </p>
-            <p>
+            <p className="text-gray-700">
                 Nos distinguimos por ser lo suficientemente ágiles para ofrecer
                 soluciones simples y rápidas, sin sacrificar la profundidad
                 estratégica y la innovación técnica que tu organización necesita

@@ -51,7 +51,7 @@ export default function DataCenter() {
                 <h2 className="text-base font-semibold leading-7 text-indigo-600">
                   Servicios tecnológicos
                 </h2>
-                <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                <p className="mt-2 text-3xl font-bold tracking-tight text-custon-blue sm:text-4xl">
                   Desarrollo de Software.
                 </p>
                 <p className="mt-6 text-lg leading-8 text-gray-600 text-justify">
@@ -76,10 +76,10 @@ export default function DataCenter() {
         </div>
       </div>
 
-      <div className="bg-white py-24 sm:py-32">
+      <div className="bg-white py-24 sm:py-6">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:text-center">
-            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            <p className="mt-2 text-3xl font-bold tracking-tight text-custon-blue sm:text-4xl">
               ¿Qué hace una Consultora de Desarrollo de Software?
             </p>
             <p className="mt-6 text-lg leading-8 text-gray-600">
@@ -98,7 +98,7 @@ export default function DataCenter() {
               {features.map((feature) => (
                 <div key={feature.name} className="relative pl-16">
                   <dt className="text-base font-semibold leading-7 text-gray-900">
-                    <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                    <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-custom-orange">
                       <feature.icon
                         className="h-6 w-6 text-white"
                         aria-hidden="true"
@@ -119,10 +119,10 @@ export default function DataCenter() {
       <section className="bg-white ">
         <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
           <div className="font-light text-gray-500 sm:text-lg ">
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 ">
+            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-custon-blue ">
               Servicios de Desarrollo de Software
             </h2>
-            <p className="mb-4">
+            <p className="mb-4 text-gray-700">
                 En la encrucijada de la tecnología y la innovación, nos
                 enorgullecemos de ser líderes en ofrecer servicios de desarrollo
                 de software de alta gama, diseñados para llevar su negocio al

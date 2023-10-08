@@ -210,7 +210,7 @@ export default function Home() {
         data-accordion="collapse"
         className="max-w-xl mx-auto py-10 pt-36"
       >
-        <h1 className="text-4xl font-bold tracking-tight text-black sm:text-6xl text-center py-6 pb-16" style={{ color: '#0E3147' }}>
+        <h1 className="text-4xl font-bold tracking-tight sm:text-6xl text-center pb-16 text-custon-blue" >
           Preguntas frecuentes
         </h1>
         <h2 id="accordion-collapse-heading-1 ">
