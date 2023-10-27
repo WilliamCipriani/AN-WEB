@@ -59,10 +59,8 @@ export default function DataCenter() {
                   aplicaciones de escritorio siguen siendo una herramienta
                   poderosa, ofreciendo rendimiento, estabilidad y
                   personalización superiores. Nos especializamos en el
-                  desarrollo de aplicaciones de escritorio personalizadas que se
-                  integran perfectamente en su flujo de trabajo existente,
-                  proporcionando soluciones robustas que satisfacen las
-                  necesidades específicas de su negocio.
+                  desarrollo de aplicaciones robustas que optimizan los procesos
+                  en su organización, reduciendo costos y tiempos innecesarios.
                 </p>
               </div>
             </div>
@@ -70,7 +68,7 @@ export default function DataCenter() {
               src="/image/Desarrollo-software/1.jpg"
               alt="Product screenshot"
               className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0 mt-10"
-              style={{maxWidth: '650px', maxHeight: '600px'}}
+              style={{ maxWidth: "650px", maxHeight: "600px" }}
             />
           </div>
         </div>
@@ -83,14 +81,14 @@ export default function DataCenter() {
               ¿Qué hace una Consultora de Desarrollo de Software?
             </p>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              En un mundo cada vez más digitalizado, una consultora de
-              desarrollo de software se erige como un pilar fundamental para
-              empresas y organizaciones que buscan innovar, optimizar procesos y
-              ofrecer servicios excepcionales a sus clientes. Nosotros, como
-              expertos en el campo, nos dedicamos a crear soluciones de software
-              personalizadas que no solo atienden tus necesidades actuales, sino
-              que también están preparadas para adaptarse a los desafíos
-              futuros.
+              En esta era digital que avanza a pasos agigantados, contar con una
+              consultora de desarrollo de software se ha vuelto esencial para
+              empresas y organizaciones que aspiran a innovar, mejorar sus
+              procesos y brindar servicios de primera a sus clientes. En nuestro
+              equipo, apasionados y expertos en tecnología, nos enfocamos en
+              diseñar soluciones de software a medida, pensadas no solo para
+              resolver tus necesidades de hoy, sino también para adaptarse y
+              enfrentar los retos que nos depara el futuro
             </p>
           </div>
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
@@ -123,13 +121,13 @@ export default function DataCenter() {
               Servicios de Desarrollo de Software
             </h2>
             <p className="mb-4 text-gray-700">
-                En la encrucijada de la tecnología y la innovación, nos
-                enorgullecemos de ser líderes en ofrecer servicios de desarrollo
-                de software de alta gama, diseñados para llevar su negocio al
-                siguiente nivel. Con una amalgama de creatividad, habilidad
-                técnica y profunda comprensión de las necesidades del negocio,
-                estamos aquí para ayudarle a forjar soluciones que sean no solo
-                viables sino revolucionarias.
+              En la encrucijada de la tecnología y la innovación, nos
+              enorgullecemos de ser líderes en ofrecer servicios de desarrollo
+              de software de alta gama, diseñados para llevar su negocio al
+              siguiente nivel. Con una amalgama de creatividad, habilidad
+              técnica y profunda comprensión de las necesidades del negocio,
+              estamos aquí para ayudarle a forjar soluciones que sean no solo
+              viables sino revolucionarias.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-4 mt-8 ">

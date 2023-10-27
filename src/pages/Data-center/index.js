@@ -39,12 +39,8 @@ const features = [
 ];
 
 export default function DataCenter() {
-
   const [activeIndex, setActiveIndex] = useState(0);
-  const images = [
-    "/image/Data-center/5.jpg",
-    "/image/Data-center/6.jpg",
-  ];
+  const images = ["/image/Data-center/5.jpg", "/image/Data-center/6.jpg"];
 
   const handleNext = () => {
     setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -84,14 +80,24 @@ export default function DataCenter() {
                 </p>
               </div>
             </div>
-            <div id="animation-carousel" className="relative w-full" style={{ width: "40rem", height: "30rem" }}>
+            <div
+              id="animation-carousel"
+              className="relative w-full"
+              style={{ width: "40rem", height: "30rem" }}
+            >
               <div className="relative h-full overflow-hidden rounded-lg">
                 {images.map((src, index) => (
-                  <div key={index} className={`${activeIndex === index ? 'block' : 'hidden'} duration-200 ease-linear`} data-carousel-item>
-                    <img 
-                      src={src} 
-                      className={`absolute block w-full h-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 object-cover`} 
-                      alt={`Imagen ${index + 1}`} 
+                  <div
+                    key={index}
+                    className={`${
+                      activeIndex === index ? "block" : "hidden"
+                    } duration-200 ease-linear`}
+                    data-carousel-item
+                  >
+                    <img
+                      src={src}
+                      className={`absolute block w-full h-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 object-cover`}
+                      alt={`Imagen ${index + 1}`}
                       style={{ width: "40rem", height: "30rem" }}
                     />
                   </div>
@@ -159,12 +165,12 @@ export default function DataCenter() {
               ¿Qué hace una Consultora e Implementación de Data Center?
             </p>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Una consultora e implementación de Data Center asiste a las
-              empresas en la planificación, diseño y establecimiento de centros
-              de datos eficientes y seguros. Su labor comienza con un análisis
-              profundo de las necesidades de la organización, seguido por la
-              selección de tecnologías y equipamientos idóneos que facilitarán
-              la gestión óptima de los datos.
+              Nuestra consultoría e implementación de Data Center asiste a las
+              empresas en la planificación y diseño de la arquitectura requerida
+              y escalable, estableciendo centros de datos eficientes y seguros.
+              Nuestra labor comienza con un análisis organizacional, seguido por
+              la selección del hardware y equipamientos idóneos que faciliten
+              una gestión óptima de los activos de datos.
             </p>
           </div>
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
@@ -197,16 +203,16 @@ export default function DataCenter() {
               Servicios de Consultoría de Data Center
             </h2>
             <p className="mb-4 text-gray-700">
-                En una era donde la infraestructura tecnológica actúa como la
-                columna vertebral de las empresas modernas, nuestra consultoría se
-                especializa en brindar soluciones líderes en el sector de Data
-                Centers. Navegamos a través del vasto océano de desafíos
-                tecnológicos, guiando a las organizaciones hacia la creación y
-                optimización de centros de datos altamente eficientes y seguros.
-                Con una combinación única de experiencia técnica y visión
-                estratégica, estamos preparados para transformar tus necesidades
-                iniciales en infraestructuras sólidas que pueden impulsar tu
-                negocio hacia adelante.
+              En una era donde la infraestructura tecnológica actúa como la
+              columna vertebral de las empresas modernas, nuestra consultoría se
+              especializa en brindar soluciones líderes en el sector de Data
+              Centers. Navegamos a través del vasto océano de desafíos
+              tecnológicos, guiando a las organizaciones hacia la creación y
+              optimización de centros de datos altamente eficientes y seguros.
+              Con una combinación única de experiencia técnica y visión
+              estratégica, estamos preparados para transformar tus necesidades
+              iniciales en infraestructuras sólidas que pueden impulsar tu
+              negocio hacia adelante.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-4 mt-8 ">

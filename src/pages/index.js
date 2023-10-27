@@ -1,10 +1,12 @@
 import Link from 'next/link';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Slider from 'react-slick';
 import { Inter } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Social from "@/components/Social";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -97,6 +99,13 @@ export default function Home() {
       }
     ]
   };
+
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      once: true,
+    });
+  }, []);
   
 
   return (
@@ -112,6 +121,7 @@ export default function Home() {
         <div
           className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
           aria-hidden="true"
+          data-aos="slide-up" data-aos-delay="800"
         >
           <div
             className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
@@ -133,7 +143,7 @@ export default function Home() {
             }}
           />
         </div>
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 text-start">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8 text-start"  data-aos="zoom-in" data-aos-delay="200">
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
               Sobre Nosotros
@@ -158,14 +168,18 @@ export default function Home() {
 
       {/*Seccion de Servicios */} 
 
-      <div className="container px-6 py-10 mx-auto ">
-        <h1 className="text-4xl font-bold tracking-tight text-black sm:text-6xl text-center pt-10 pb-10" style={{ color: '#0E3147' }}>
+      <div className="container px-6 py-10 mx-auto " >
+        <h1 
+          className="text-4xl font-bold tracking-tight text-black sm:text-6xl text-center pt-10 pb-10" 
+          style={{ color: '#0E3147' }}
+          data-aos="fade"
+          >
           Servicios
         </h1>
 
         <Slider {...settings}>
         {data.map((item, idx) => (
-          <div key={idx} className="w-full px-1 pt-10">
+          <div key={idx} className="w-full px-1 pt-10" data-aos="zoom-in" data-aos-delay="200"> 
             <div className="w-full h-80 bg-gray-300 rounded-lg dark:bg-gray-600">
               <Link href={item.link}>
                 <img src={item.src} alt={item.alt} className="h-full w-full object-cover rounded-lg cursor-pointer"/>
@@ -178,31 +192,32 @@ export default function Home() {
         </Slider>
       </div>
 
-      <h1 className="pt-36 text-4xl font-bold tracking-tight text-black sm:text-6xl text-center" style={{ color: '#0E3147' }}>
+      <h2 className="pt-36 text-4xl font-bold tracking-tight text-black sm:text-6xl text-center" 
+        style={{ color: '#0E3147' }}
+        data-aos="fade">
         Motivos para confiar en nosotros
-      </h1>
+      </h2>
 
       {/*Seccion de iconos */}    
       <section className='grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 max-w-screen-xl mx-auto pt-10 sm:mx-auto' >
-      {Icons.map((icon) => (
-          <div key={icon.image} className="flex flex-col items-center justify-center sm:w-full md:w-[310px]">
-
-                  <div  className="flex flex-col items-center justify-center" style={{ width: '310px', height: '184.4px' }}>
-                      <div className="p-4" data-id="d38016c" data-element_type="widget" data-widget_type="icon-box.default">
-                          <div className="flex flex-col items-center justify-center">
-                              <div className="w-21 h-21 rounded-full overflow-hidden flex items-center justify-center">
-                                  <img src={icon.image} alt='Imagen Descriptiva' className="object-cover rotate-on-hover cursor-pointer"/> 
-                              </div>
-                              <div className="mt-2 text-center text-sm" style={{ color: '#0E3147' }}>
-                                  <p>{icon.text}</p>
-                              </div>
-                          </div>
-                      </div>
+        {Icons.map((icon) => (
+          <div key={icon.image} className="flex flex-col items-center justify-center sm:w-full md:w-[310px]" data-aos="zoom-in" data-aos-delay="200">
+            <div className="flex flex-col items-center justify-center" style={{ width: '310px', height: '184.4px' }}>
+              <div className="p-4" data-id="d38016c" data-element_type="widget" data-widget_type="icon-box.default">
+                <div className="flex flex-col items-center justify-center">
+                  <div className="w-21 h-21 rounded-full overflow-hidden flex items-center justify-center">
+                    <img src={icon.image} alt='Imagen Descriptiva' className="object-cover rotate-on-hover"/> 
                   </div>
-          
+                  <div className="mt-2 text-center text-sm" style={{ color: '#0E3147' }}>
+                    <p>{icon.text}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         ))}
       </section>
+
      
       {/*Seccion de preguntas frecuentes */} 
       <div
@@ -210,10 +225,10 @@ export default function Home() {
         data-accordion="collapse"
         className="max-w-xl mx-auto py-10 pt-36"
       >
-        <h1 className="text-4xl font-bold tracking-tight sm:text-6xl text-center pb-16 text-custon-blue" >
+        <h2 className="text-4xl font-bold tracking-tight sm:text-6xl text-center pb-16 text-custon-blue" data-aos="fade">
           Preguntas frecuentes
-        </h1>
-        <h2 id="accordion-collapse-heading-1 ">
+        </h2>
+        <h3 id="accordion-collapse-heading-1 ">
           <button
             type="button"
             onClick={() => toggleSection(1)}
@@ -240,7 +255,7 @@ export default function Home() {
               />
             </svg>
           </button>
-        </h2>
+        </h3>
         <div
           id="accordion-collapse-body-1"
           className={openSection === 1 ? "" : "hidden"}
@@ -258,7 +273,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <h2 id="accordion-collapse-heading-2">
+        <h3 id="accordion-collapse-heading-2">
           <button
             type="button"
             onClick={() => toggleSection(2)}
@@ -285,7 +300,7 @@ export default function Home() {
               />
             </svg>
           </button>
-        </h2>
+        </h3>
         <div
           id="accordion-collapse-body-2"
           className={openSection === 2 ? "" : "hidden"}
@@ -307,7 +322,7 @@ export default function Home() {
           </div>
         </div>
 
-        <h2 id="accordion-collapse-heading-3">
+        <h3 id="accordion-collapse-heading-3">
           <button
             type="button"
             onClick={() => toggleSection(3)}
@@ -334,10 +349,7 @@ export default function Home() {
               />
             </svg>
           </button>
-        </h2>
-
-        
-
+        </h3>
 
         <div
           id="accordion-collapse-body-3"
