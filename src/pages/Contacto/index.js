@@ -59,22 +59,23 @@ export default function Contacto() {
             <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
                 <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-custon-blue ">Contacta con Nosotros</h2>
                 <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 sm:text-xl">¿Tienes un problema técnico? ¿Quiere enviar comentarios sobre una función beta? ¿Necesita detalles sobre nuestro plan Business? Haznos saber.</p>
-                <div class="flex flex-col md:flex-row justify-around pb-16">
-                        <div class="flex items-center mt-4 text-gray-600 dark:text-gray-400">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500 ">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                <div className="flex flex-col md:flex-row justify-around pb-16">
+                        <div className="flex items-center mt-4 text-gray-600 dark:text-gray-400">
+                            <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" className="w-8 h-8 text-gray-500 ">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
                             </svg>
-                            <div class="ml-4 text-md tracking-wide font-semibold w-40">
-                                +51 943 980 740
+                            <div className="ml-4 text-md tracking-wide font-semibold w-40">
+                                +51 943 980 740 &nbsp;  +51 943 980 740
                             </div>
                         </div>
 
-                        <div class="flex items-center mt-4 md:mt-0 text-gray-600 dark:text-gray-400">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        <div className="flex items-center mt-4 md:mt-0 text-gray-600 dark:text-gray-400">
+                            <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" className="w-8 h-8 text-gray-500">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                             </svg>
-                            <div class="ml-4 text-sm md:text-md tracking-wide font-semibold w-40 mr-28">
-                                serviciotecnico@anserviciostecnologicos.com
+                            <div className="ml-4 text-sm md:text-md tracking-wide font-semibold w-40 mr-28">
+                                serviciotecnico@anserviciostecnologicos.com  &nbsp;
+                                ventas@anserviciostecnologicos.com
                             </div>
                         </div>
                 </div>

@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Link from 'next/link';
 import { useState} from "react";
 import Slider from 'react-slick';
@@ -103,6 +104,16 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>Consultoría IT y Desarrollo | AN Tecnología</title>
+        <meta
+          name="description"
+          content="Servicios de consultoría IT y desarrollo a medida para potenciar tu empresa con AN Tecnología. Expertos en desarrollo web, analisis de datos, etc"
+        />
+        <link rel="canonical" href="https://an-web.vercel.app/" />
+        <html lang="es" />
+      </Head>
+
       <Header />
 
       <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
@@ -110,6 +121,8 @@ export default function Home() {
           src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
           alt="Imagen de personas trabajando como un equipo"
           className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
+          width={34}
+          height={34}
         />
         <div
           className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"

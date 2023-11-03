@@ -19,12 +19,12 @@ function Footer() {
                             </Link>
                         </div>
                         <div className="flex items-center space-x-6 md:mt-4">
-                            <a href="https://www.facebook.com/tuPagina" target="_blank" rel="noopener noreferrer">
+                            <Link href="/" target="_blank" rel="noopener noreferrer">
                                 <FaFacebook size={28} />
-                            </a>
-                            <a href="https://www.instagram.com/tuPagina" target="_blank" rel="noopener noreferrer">
+                            </Link>
+                            <Link href="/" target="_blank" rel="noopener noreferrer">
                                 <FaInstagram size={28} />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -32,6 +32,7 @@ function Footer() {
                     <div className="text-gray-400">
                         <p>Email: serviciotecnico@anserviciostecnologicos.com</p>
                         <p>Teléfono: +51 943 980 740</p>
+                        <p>Teléfono: +51 941 837 077</p>
                     </div>
                 </div>
             </div>
