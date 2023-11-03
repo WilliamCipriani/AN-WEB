@@ -40,7 +40,9 @@ const features = [
 
 export default function DataCenter() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const images = ["/image/Data-center/5.jpg", "/image/Data-center/6.jpg"];
+  const images = ["/image/Data-center/revision-instalaciones-data-center.jpg", 
+  "/image/Data-center/planificacion-arquitectura-data-center.jpg"
+  ];
 
   const handleNext = () => {
     setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -98,7 +100,7 @@ export default function DataCenter() {
                       src={src}
                       className={`absolute block w-full h-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 object-cover`}
                       alt={`Imagen ${index + 1}`}
-                      style={{ width: "40rem", height: "30rem" }}
+                      style={{ width: "40rem", height: "30rem" }} 
                     />
                   </div>
                 ))}
@@ -218,13 +220,13 @@ export default function DataCenter() {
           <div className="grid grid-cols-2 gap-4 mt-8 ">
             <img
               className="w-full h-96 rounded-lg bg-cover object-cover"
-              src="/image/Data-center/1.jpg"
-              alt="office content 1"
+              src="/image/Data-center/rack_datacenter.jpg"
+              alt="Centro de datos con torres de servidores" data-aos="fade-down"
             />
             <img
               className="mt-4 w-full h-96 lg:mt-10 rounded-lg bg-cover object-cover"
-              src="/image/Data-center/4.jpg"
-              alt="office content 2"
+              src="/image/Data-center/servidores_datacenter.jpg"
+              alt="Primer plano de servidores con luces" data-aos="fade-left"
             />
           </div>
         </div>

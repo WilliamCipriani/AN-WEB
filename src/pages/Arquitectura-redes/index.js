@@ -13,30 +13,30 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 const features = [
-    {
-        name: "Seguridad de Red",
-        description:
-        "Implementamos robustas medidas de seguridad para proteger tu red de amenazas externas e internas, garantizando la integridad y confidencialidad de tus datos en todo momento.",
-        icon: LockClosedIcon,
-    },
-    {
-        name: "Rendimiento y Escalabilidad",
-        description:
-        "Diseñamos arquitecturas de red que no solo cumplen con tus requisitos actuales, sino que también son capaces de adaptarse y crecer con tu empresa, garantizando un rendimiento óptimo en todo momento.",
-        icon: ArrowUpRightIcon,
-    },
-    {
-        name: "Gestión y Monitoreo Continuo",
-        description:
-        "Ofrecemos soluciones de gestión de red que permiten un monitoreo continuo del estado y rendimiento de tu red, facilitando la identificación y resolución rápida de cualquier problema que pueda surgir.",
-        icon: EyeIcon,
-    },
-    {
-        name: "Soporte Técnico Especializado",
-        description:
-        "Nuestro equipo de expertos está siempre a disposición para brindarte el soporte técnico que necesitas, ayudándote a resolver cualquier problema de red de manera rápida y eficiente, minimizando así cualquier tiempo de inactividad.",
-        icon: WrenchScrewdriverIcon,
-    },
+  {
+    name: "Seguridad de Red",
+    description:
+      "Implementamos robustas medidas de seguridad para proteger tu red de amenazas externas e internas, garantizando la integridad y confidencialidad de tus datos en todo momento.",
+    icon: LockClosedIcon,
+  },
+  {
+    name: "Rendimiento y Escalabilidad",
+    description:
+      "Diseñamos arquitecturas de red que no solo cumplen con tus requisitos actuales, sino que también son capaces de adaptarse y crecer con tu empresa, garantizando un rendimiento óptimo en todo momento.",
+    icon: ArrowUpRightIcon,
+  },
+  {
+    name: "Gestión y Monitoreo Continuo",
+    description:
+      "Ofrecemos soluciones de gestión de red que permiten un monitoreo continuo del estado y rendimiento de tu red, facilitando la identificación y resolución rápida de cualquier problema que pueda surgir.",
+    icon: EyeIcon,
+  },
+  {
+    name: "Soporte Técnico Especializado",
+    description:
+      "Nuestro equipo de expertos está siempre a disposición para brindarte el soporte técnico que necesitas, ayudándote a resolver cualquier problema de red de manera rápida y eficiente, minimizando así cualquier tiempo de inactividad.",
+    icon: WrenchScrewdriverIcon,
+  },
 ];
 
 export default function ArquitecturaRedes() {
@@ -55,14 +55,13 @@ export default function ArquitecturaRedes() {
                   Diseño e implementación de Arquitectura de Redes.
                 </p>
                 <p className="mt-6 text-lg leading-8 text-gray-600 text-justify">
-                    En el mundo actual, la robustez de una organización puede
-                    medirse a través de la eficacia de su red. Nuestro servicio
-                    especializado en diseño e implementación de arquitectura de
-                    redes garantiza una estructura de red resiliente y optimizada.
-                    Con una planificación meticulosa y ejecución experta, nos
-                    aseguramos de que su red no solo atienda las demandas
-                    actuales, sino que esté preparada para escalar según las
-                    futuras necesidades empresariales.
+                  En el mundo actual, la robustez de una organización puede
+                  medirse a través de la eficacia de su red. Nuestro servicio
+                  especializado en diseño e implementación de arquitectura de
+                  redes garantiza una red resiliente y optimizada. Definimos el
+                  dimensionamiento de los recursos informáticos según la carga
+                  de trabajo para poder brindar una arquitectura de red robusta
+                  y escalable.
                 </p>
               </div>
             </div>
@@ -70,7 +69,8 @@ export default function ArquitecturaRedes() {
               src="/image/Redes/2.jpg"
               alt="Product screenshot"
               className="w-[40rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[50rem] md:-ml-4 lg:-ml-0"
-              style={{maxWidth: '650px', maxHeight: '600px'}}
+              style={{ maxWidth: "650px", maxHeight: "600px" }}
+              data-aos="zoom-in"
             />
           </div>
         </div>
@@ -121,32 +121,32 @@ export default function ArquitecturaRedes() {
               Servicios de Consultoría en Arquitectura de Redes
             </h2>
             <p className="mb-4 text-gray-700">
-                En una era donde la conectividad y la infraestructura de redes son
-                la columna vertebral de cualquier empresa exitosa, nuestra
-                consultoría se posiciona a la vanguardia, asistiendo a las
-                organizaciones a navegar con éxito por el complejo panorama de las
-                tecnologías de red modernas. Con una combinación única de
-                conocimientos técnicos y visión estratégica, estamos listos para
-                ayudarte a diseñar e implementar soluciones de red que pueden
-                llevar tu negocio al próximo nivel.
+              En una era donde la conectividad y la infraestructura de redes son
+              la columna vertebral de cualquier empresa exitosa, nuestra
+              consultoría se posiciona a la vanguardia, asistiendo a las
+              organizaciones a navegar con éxito por el complejo panorama de las
+              tecnologías de red modernas. Con una combinación única de
+              conocimientos técnicos y visión estratégica, estamos listos para
+              ayudarte a diseñar e implementar soluciones de red que pueden
+              llevar tu negocio al próximo nivel.
             </p>
             <p className="text-gray-700">
-                Nos distinguimos por ser lo suficientemente ágiles para ofrecer
-                soluciones simples y rápidas, sin sacrificar la profundidad
-                estratégica y la innovación técnica que tu organización necesita
-                para sobresalir en el competitivo mundo de hoy.
+              Nos distinguimos por ser lo suficientemente ágiles para ofrecer
+              soluciones simples y rápidas, sin sacrificar la profundidad
+              estratégica y la innovación técnica que tu organización necesita
+              para sobresalir en el competitivo mundo de hoy.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-4 mt-8 ">
             <img
-                className="w-full h-96 rounded-lg bg-cover object-cover"
-                src="/image/Redes/2.jpg"
-                alt="office content 1"
+              className="w-full h-96 rounded-lg bg-cover object-cover"
+              src="/image/Redes/2.jpg"
+              alt="office content 1"  data-aos="fade-down"
             />
             <img
-                className="mt-4 w-full h-96 lg:mt-10 rounded-lg bg-cover object-cover"
-                src="/image/Redes/3.jpg"
-                alt="office content 2"
+              className="mt-4 w-full h-96 lg:mt-10 rounded-lg bg-cover object-cover"
+              src="/image/Redes/3.jpg"
+              alt="office content 2" data-aos="fade-left"
             />
           </div>
         </div>

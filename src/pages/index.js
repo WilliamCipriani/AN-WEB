@@ -1,12 +1,10 @@
 import Link from 'next/link';
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import Slider from 'react-slick';
 import { Inter } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Social from "@/components/Social";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -70,11 +68,11 @@ export default function Home() {
   };
 
   const data = [
-    { src: '/image/index/analisis-datos.jpg', alt: 'Analisis de Datos', link: '/Analisis-datos', title: 'Análisis de Datos' },
-    { src: '/image/index/web.jpg', alt: 'Desarrollo Web', link: '/Desarrollo-web', title: 'Desarrollo Web' },
-    { src: '/image/index/data-center.jpg', alt: 'Data Center', link: '/Data-center', title: 'Data Center' },
+    { src: '/image/index/analisis-datos-reunion-equipo.jpg', alt: 'Analisis de Datos', link: '/Analisis-datos', title: 'Análisis de Datos' },
+    { src: '/image/index/codigo-fuente-web.jpg', alt: 'Desarrollo Web', link: '/Desarrollo-web', title: 'Desarrollo Web' },
+    { src: '/image/index/servidores-data-center.jpg', alt: 'Data Center', link: '/Data-center', title: 'Data Center' },
     { src: '/image/Redes/5.jpg', alt: 'Arquitectura de Redes', link: '/Arquitectura-redes', title: 'Arquitectura de Redes' },
-    { src: '/image/index/software.jpg', alt: 'Desarrollo de Software', link: '/Desarrollo-software', title: 'Desarrollo de Software' }
+    { src: '/image/index/programacion-software.jpg', alt: 'Desarrollo de Software', link: '/Desarrollo-software', title: 'Desarrollo de Software' }
   ];
 
   const settings = {
@@ -100,12 +98,7 @@ export default function Home() {
     ]
   };
 
-  useEffect(() => {
-    AOS.init({
-      duration: 2000,
-      once: true,
-    });
-  }, []);
+
   
 
   return (
@@ -115,7 +108,7 @@ export default function Home() {
       <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
         <img
           src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
-          alt=""
+          alt="Imagen de personas trabajando como un equipo"
           className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
         />
         <div

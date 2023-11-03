@@ -69,6 +69,7 @@ export default function DataCenter() {
               alt="Product screenshot"
               className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0 mt-10"
               style={{ maxWidth: "650px", maxHeight: "600px" }}
+              data-aos="zoom-in"
             />
           </div>
         </div>
@@ -134,12 +135,12 @@ export default function DataCenter() {
             <img
               className="w-full h-96 rounded-lg bg-cover object-cover"
               src="/image/Desarrollo-software/2.jpg"
-              alt="office content 1"
+              alt="office content 1" data-aos="fade-down"
             />
             <img
               className="mt-4 w-full h-96 lg:mt-10 rounded-lg bg-cover object-cover"
               src="/image/Desarrollo-software/4.jpg"
-              alt="office content 2"
+              alt="office content 2" data-aos="fade-left"
             />
           </div>
         </div>

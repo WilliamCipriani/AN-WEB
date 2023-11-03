@@ -8,6 +8,7 @@ import { Inter } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 const features = [
@@ -38,6 +39,8 @@ const features = [
 ]
 
 export default function Contacto() {
+
+  
     return (
         <>
             <Header />
@@ -46,12 +49,12 @@ export default function Contacto() {
                     <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
                     <div className="lg:pr-8 lg:pt-4">
                         <div className="lg:max-w-lg">
-                        <h2 className="text-base font-semibold leading-7 text-indigo-600">
+                        <span className="text-base font-semibold leading-7 text-indigo-600">
                             Servicios tecnológicos
-                        </h2>
-                        <p className="mt-2 text-3xl font-bold tracking-tight text-custon-blue sm:text-4xl">
+                        </span>
+                        <h1 className="mt-2 text-3xl font-bold tracking-tight text-custon-blue sm:text-4xl">
                             Consultoría Análisis de Datos.
-                        </p>
+                        </h1>
                         <p className="mt-6 text-lg leading-8 text-gray-600 text-justify">
                             La toma de decisiones informadas es el pilar de cualquier
                             empresa exitosa. Nuestros servicios de análisis de datos están
@@ -65,10 +68,11 @@ export default function Contacto() {
                         </div>
                     </div>
                     <img
-                        src="/image/Analisis-datos/5.jpg"
+                        src="/image/Analisis-datos/analista_datos_mirando_graficos.jpg"
                         alt="Product screenshot"
                         className="rounded-xl shadow-xl ring-1 ring-gray-400/10"
                         style={{maxWidth: '650px', maxHeight: '600px'}}
+                        data-aos="zoom-in"
                     />
                     </div>
                 </div>
@@ -77,9 +81,9 @@ export default function Contacto() {
             <div className="bg-white py-24 sm:py-6">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-2xl lg:text-center">
-                    <p className="mt-2 text-3xl font-bold tracking-tight text-custon-blue sm:text-4xl">
+                    <h2 className="mt-2 text-3xl font-bold tracking-tight text-custon-blue sm:text-4xl" >
                         ¿Qué hace una Consultora de Análisis de Datos?
-                    </p>
+                    </h2>
                     <p className="mt-6 text-lg leading-8 text-gray-600">
                         Una consultora de análisis de datos se especializa en ayudar a las organizaciones a extraer valor significativo de sus datos. Mediante el uso de técnicas estadísticas, algoritmos avanzados y herramientas modernas de análisis, transforman grandes volúmenes de datos en insights accionables.
                     </p>
@@ -110,8 +114,8 @@ export default function Contacto() {
                         <p className="text-gray-700">Somos estrategas, diseñadores y desarrolladores. Innovadores y solucionadores de problemas. Lo suficientemente pequeño como para ser simple y rápido.</p>
                     </div>
                     <div className="grid grid-cols-2 gap-4 mt-8 ">
-                        <img className="w-full h-96 rounded-lg bg-cover object-cover" src="/image/Analisis-datos/2.jpg" alt="office content 1" />
-                        <img className="mt-4 w-full h-96 lg:mt-10 rounded-lg bg-cover object-cover" src="/image/Analisis-datos/4.jpg" alt="office content 2" />
+                        <img className="w-full h-96 rounded-lg bg-cover object-cover" src="/image/Analisis-datos/analisis-dashboard-trabajo-mesa-cafe.jpg" alt="office content 1" data-aos="fade-down"/>
+                        <img className="mt-4 w-full h-96 lg:mt-10 rounded-lg bg-cover object-cover" src="/image/Analisis-datos/trabajo-equipo-excel-finanzas-oficina.jpg" alt="office content 2" data-aos="fade-left"/>
                     </div>
                 </div>
             </section>

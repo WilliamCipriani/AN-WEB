@@ -94,7 +94,8 @@ export default function DesarrolloWeb() {
                       className={`absolute block w-full h-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 object-cover`} 
                       alt={`Imagen ${index + 1}`} 
                       style={{ width: "40rem", height: "30rem" }}
-                    />
+                      
+                      />
                   </div>
                 ))}
               </div>
@@ -231,12 +232,12 @@ export default function DesarrolloWeb() {
             <img
               className="w-full h-96 rounded-lg bg-cover object-cover"
               src="/image/Desarrollo-web/2.jpg"
-              alt="office content 1"
+              alt="office content 1" data-aos="fade-down"
             />
             <img
               className="mt-4 w-full h-96 lg:mt-10 rounded-lg bg-cover object-cover"
               src="/image/Desarrollo-web/3.jpg"
-              alt="office content 2"
+              alt="office content 2" data-aos="fade-left"
             />
           </div>
         </div>
