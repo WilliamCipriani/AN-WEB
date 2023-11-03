@@ -15,7 +15,7 @@ function Header() {
         <div className="w-full flex flex-wrap items-center justify-around mx-auto p-4">
             <div className="flex items-center flex-shrink-0 h-14 xs:h-10">
                 <img src="/image/index/an-servicios-tecnologicos-logo.png" className="h-14 sm:h-20 xs:h-10" alt="AN Logo" style={{ objectFit: 'contain' }}
-                    width={autoprefixer} height={autoprefixer}/>
+                    />
             </div>
             <div className="flex md:order-2 justify-end">
             <button

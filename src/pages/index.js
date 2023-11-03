@@ -111,7 +111,7 @@ export default function Home() {
           content="Servicios de consultoría IT y desarrollo a medida para potenciar tu empresa con AN Tecnología. Expertos en desarrollo web, analisis de datos, etc"
         />
         <link rel="canonical" href="https://an-web.vercel.app/" />
-        <html lang="es" />
+        
       </Head>
 
       <Header />
