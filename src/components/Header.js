@@ -20,7 +20,7 @@ function Header() {
             <div className="flex md:order-2 justify-end">
             <button
                 type="button"
-                onClick={() => window.location.href='/Contacto'}
+                onClick={() => window.location.href='/contacto'}
                 className="text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 sm:text-lg sm:px-6 sm:py-3 sm:mr-0"
                 style={{ background: '#0E3147' }}
             >
@@ -68,7 +68,7 @@ function Header() {
                 </li>
                 <li>
                 <Link
-                    href="/Analisis-datos"
+                    href="/analisis-datos"
                     className="block py-2 pl-3 pr-4 text-slate-950 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-slate-950 dark:hover:bg-gray-700 dark:hover:text-slate-950 md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                     ANÁLISIS DE DATOS
@@ -76,7 +76,7 @@ function Header() {
                 </li>
                 <li>
                 <Link
-                    href="/Desarrollo-web"
+                    href="/desarrollo-web"
                     className="block py-2 pl-3 pr-4 text-slate-950 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-slate-950 dark:hover:bg-gray-700 dark:hover:text-slate-950 md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                     DESARROLLO WEB
@@ -84,7 +84,7 @@ function Header() {
                 </li>
                 <li>
                 <Link
-                    href="/Arquitectura-redes"
+                    href="/arquitectura-redes"
                     className="block py-2 pl-3 pr-4 text-slate-950 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-slate-950 dark:hover:bg-gray-700 dark:hover:text-slate-950 md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                     ARQUITECTURA DE REDES
@@ -92,7 +92,7 @@ function Header() {
                 </li>
                 <li>
                 <Link
-                    href="/Data-center"
+                    href="/data-center"
                     className="block py-2 pl-3 pr-4 text-slate-950 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-slate-950 dark:hover:bg-gray-700 dark:hover:text-slate-950 md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                     DATA CENTER
@@ -100,7 +100,7 @@ function Header() {
                 </li>
                 <li>
                 <Link
-                    href="/Desarrollo-software"
+                    href="/desarrollo-software"
                     className="block py-2 pl-3 pr-4 text-slate-950 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-slate-950 dark:hover:bg-gray-700 dark:hover:text-slate-950 md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                     DESARROLLO SOFTWARE

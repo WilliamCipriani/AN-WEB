@@ -9,12 +9,20 @@ function Footer() {
                     <h1 className="w-full md:w-2/3">¡Ponerse en contacto!</h1>
                 </div>
                 <div className="flex mt-8 flex-col md:flex-row md:justify-between">
+                    <div> 
                     <p className="w-full md:w-2/3 text-gray-400">
-                        Descubre cómo nuestros productos pueden ayudarle a ser más productivo.
+                        Descubre cómo nuestros servicios pueden ayudarle a ser más productivo.
                     </p>
+                    <div className="mt-8 flex flex-col md:flex-row md:justify-between">
+                    <div className="text-gray-400">
+                        <p>Email: serviciotecnico@anserviciostecnologicos.com</p>
+                        <p>Teléfono: +51 943 980 740 / +51 941 837 077</p>
+                    </div>
+                    </div>
+                    </div>
                     <div className="space-y-4 md:space-y-0 md:space-x-12">
                         <div className="w-44 pt-6 md:pt-0 md:mb-4">
-                            <Link href="/Contacto" className="bg-red-500 justify-center text-center rounded-lg shadow px-10 py-3 flex items-center">
+                            <Link href="/contacto" className="bg-red-500 justify-center text-center rounded-lg shadow px-10 py-3 flex items-center">
                                 Contacto
                             </Link>
                         </div>
@@ -28,13 +36,7 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className="mt-8 flex flex-col md:flex-row md:justify-between">
-                    <div className="text-gray-400">
-                        <p>Email: serviciotecnico@anserviciostecnologicos.com</p>
-                        <p>Teléfono: +51 943 980 740</p>
-                        <p>Teléfono: +51 941 837 077</p>
-                    </div>
-                </div>
+                
             </div>
         </footer>
     );

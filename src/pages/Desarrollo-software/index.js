@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { useState } from "react";
+import Head from "next/head";
 import {
   LockClosedIcon,
   WrenchScrewdriverIcon,
@@ -9,6 +8,7 @@ import {
 import { Inter } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Social from "@/components/Social";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -42,6 +42,11 @@ const features = [
 export default function DataCenter() {
   return (
     <>
+      <Head>
+        <title>Desarrollo de Software Personalizado | Consultoría IT AN</title>
+        <meta name="description" content="Impulsa tu organización con el desarrollo de software. Rendimiento y soluciones personalizadas para tus necesidades tecnológicas." />
+        <link rel="canonical" href="https://an-web.vercel.app/desarrollo-software"/>
+      </Head>
       <Header />
       <div className="overflow-hidden bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -65,8 +70,8 @@ export default function DataCenter() {
               </div>
             </div>
             <img
-              src="/image/Desarrollo-software/1.jpg"
-              alt="Product screenshot"
+              src="/image/Desarrollo-software/coding-session-web-development.jpg"
+              alt=" Sesión intensiva de programación para el desarrollo web con múltiples pantallas"
               className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0 mt-10"
               style={{ maxWidth: "650px", maxHeight: "600px" }}
               data-aos="zoom-in"
@@ -134,17 +139,19 @@ export default function DataCenter() {
           <div className="grid grid-cols-2 gap-4 mt-8 ">
             <img
               className="w-full h-96 rounded-lg bg-cover object-cover"
-              src="/image/Desarrollo-software/2.jpg"
-              alt="office content 1" data-aos="fade-down"
+              src="/image/Desarrollo-software/software-engineer-coding-laptop.jpg"
+              alt="Ingeniero de software codificando en un laptop en una oficina moderna" data-aos="fade-down"
             />
             <img
               className="mt-4 w-full h-96 lg:mt-10 rounded-lg bg-cover object-cover"
-              src="/image/Desarrollo-software/4.jpg"
-              alt="office content 2" data-aos="fade-left"
+              src="/image/Desarrollo-software/colaboracion-equipo-desarrollo-software.jpg"
+              alt="Equipo colaborativo trabajando en desarrollo de software con tabletas y laptops" data-aos="fade-left"
             />
           </div>
         </div>
       </section>
+
+      <Social /> 
       <Footer />
     </>
   );

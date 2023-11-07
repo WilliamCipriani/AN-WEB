@@ -6,60 +6,12 @@ import { Inter } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Social from "@/components/Social";
+import Icons from '@/components/Icons';
 
 
 const inter = Inter({ subsets: ["latin"] });
 
-const Icons = [
-  {
-    image: "/svg/1.svg",
-    text: "Expertos emergentes en diseño y desarrollo de sitios web"
-  },
-  {
-    image: "/svg/2.svg",
-    text: "Sitios web optimizados para destacar en los resultados de búsqueda de Google"
-  },
-  {
-    image: "/svg/3.svg",
-    text: "Diseños innovadores, cautivadores y con interactividad dinámica."
-  },
-  {
-    image: "/svg/4.svg",
-    text: "Diseño web responsivo para smartphones y tablets."
-  },
-  {
-    image: "/svg/5.svg",
-    text: "Formación para gestionar con eficacia el contenido de tu sitio web."
-  },
-  {
-    image: "/svg/6.svg",
-    text: "Establecemos alianzas duraderas con nuestros clientes."
-  },
-  {
-    image: "/svg/7.svg",
-    text: "Nuestros clientes consistentemente expresan su elevada satisfacción con nuestros servicios."
-  },
-  {
-    image: "/svg/8.svg",
-    text: "Nos enfocamos íntegramente en ofrecer la máxima calidad."
-  },
-  {
-    image: "/svg/9.svg",
-    text: "Equipo de profesionales experimentados y altamente capacitados."
-  },
-  {
-    image: "/svg/10.svg",
-    text: "Soporte técnico de excelencia y respuesta ágil."
-  },
-  {
-    image: "/svg/11.svg",
-    text: "Propuestas valiosas a precios competitivos."
-  },
-  {
-    image: "/svg/12.svg",
-    text: "Monitoreo y gestión continua de su sitio web."
-  },
-]
+
 
 export default function Home() {
   const [openSection, setOpenSection] = useState(null);
@@ -69,11 +21,11 @@ export default function Home() {
   };
 
   const data = [
-    { src: '/image/index/analisis-datos-reunion-equipo.jpg', alt: 'Analisis de Datos', link: '/Analisis-datos', title: 'Análisis de Datos' },
-    { src: '/image/index/codigo-fuente-web.jpg', alt: 'Desarrollo Web', link: '/Desarrollo-web', title: 'Desarrollo Web' },
-    { src: '/image/index/servidores-data-center.jpg', alt: 'Data Center', link: '/Data-center', title: 'Data Center' },
-    { src: '/image/Redes/5.jpg', alt: 'Arquitectura de Redes', link: '/Arquitectura-redes', title: 'Arquitectura de Redes' },
-    { src: '/image/index/programacion-software.jpg', alt: 'Desarrollo de Software', link: '/Desarrollo-software', title: 'Desarrollo de Software' }
+    { src: '/image/index/analisis-datos-reunion-equipo.jpg', alt: 'Analisis de Datos', link: '/analisis-datos', title: 'Análisis de Datos' },
+    { src: '/image/index/codigo-fuente-web.jpg', alt: 'Desarrollo Web', link: '/desarrollo-web', title: 'desarrollo Web' },
+    { src: '/image/index/servidores-data-center.jpg', alt: 'Data Center', link: '/data-center', title: 'data Center' },
+    { src: '/image/Redes/conexion-global-servicios-tecnologicos-an.jpg', alt: 'Arquitectura de Redes', link: '/arquitectura-redes', title: 'arquitectura de Redes' },
+    { src: '/image/index/programacion-software.jpg', alt: 'Desarrollo de Software', link: '/desarrollo-software', title: 'Desarrollo de Software' }
   ];
 
   const settings = {
@@ -99,9 +51,6 @@ export default function Home() {
     ]
   };
 
-
-  
-
   return (
     <>
       <Head>
@@ -111,7 +60,6 @@ export default function Home() {
           content="Servicios de consultoría IT y desarrollo a medida para potenciar tu empresa con AN Tecnología. Expertos en desarrollo web, analisis de datos, etc"
         />
         <link rel="canonical" href="https://an-web.vercel.app/" />
-        
       </Head>
 
       <Header />
@@ -205,25 +153,7 @@ export default function Home() {
       </h2>
 
       {/*Seccion de iconos */}    
-      <section className='grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 max-w-screen-xl mx-auto pt-10 sm:mx-auto' >
-        {Icons.map((icon) => (
-          <div key={icon.image} className="flex flex-col items-center justify-center sm:w-full md:w-[310px]" data-aos="zoom-in" data-aos-delay="200">
-            <div className="flex flex-col items-center justify-center" style={{ width: '310px', height: '184.4px' }}>
-              <div className="p-4" data-id="d38016c" data-element_type="widget" data-widget_type="icon-box.default">
-                <div className="flex flex-col items-center justify-center">
-                  <div className="w-21 h-21 rounded-full overflow-hidden flex items-center justify-center">
-                    <img src={icon.image} alt='Imagen Descriptiva' className="object-cover rotate-on-hover"/> 
-                  </div>
-                  <div className="mt-2 text-center text-sm" style={{ color: '#0E3147' }}>
-                    <p>{icon.text}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        ))}
-      </section>
-
+      <Icons />
      
       {/*Seccion de preguntas frecuentes */} 
       <div

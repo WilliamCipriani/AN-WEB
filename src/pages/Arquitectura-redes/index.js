@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { useState } from "react";
+import Head from "next/head";
 import {
   LockClosedIcon,
   WrenchScrewdriverIcon,
@@ -8,6 +7,7 @@ import {
 } from "@heroicons/react/20/solid";
 import { Inter } from "next/font/google";
 import Header from "@/components/Header";
+import Social from "@/components/Social";
 import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -42,6 +42,11 @@ const features = [
 export default function ArquitecturaRedes() {
   return (
     <>
+      <Head>
+        <title>Consultoría IT AN| Expertos en Arquitectura de Redes y Tecnología</title>
+        <meta name="description" content="Descubre con Consultoría IT AN cómo una arquitectura de redes eficiente y un diseño estratégico pueden transformar la infraestructura de tu empresa." />
+        <link rel="canonical" href="https://an-web.vercel.app/arquitectura-redes"/>
+      </Head>
       <Header />
       <div className="overflow-hidden bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -66,8 +71,8 @@ export default function ArquitecturaRedes() {
               </div>
             </div>
             <img
-              src="/image/Redes/2.jpg"
-              alt="Product screenshot"
+              src="/image/Redes/cables-de-red-tecnologia-informatica.jpg"
+              alt="Cables de red conectados a un switch, detalle de infraestructura de red."
               className="w-[40rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[50rem] md:-ml-4 lg:-ml-0"
               style={{ maxWidth: "650px", maxHeight: "600px" }}
               data-aos="zoom-in"
@@ -140,17 +145,18 @@ export default function ArquitecturaRedes() {
           <div className="grid grid-cols-2 gap-4 mt-8 ">
             <img
               className="w-full h-96 rounded-lg bg-cover object-cover"
-              src="/image/Redes/2.jpg"
-              alt="office content 1"  data-aos="fade-down"
+              src="/image/Redes/cables-de-red-tecnologia-informatica.jpg"
+              alt="Cables de red conectados a un switch, detalle de infraestructura de red."  data-aos="fade-down"
             />
             <img
               className="mt-4 w-full h-96 lg:mt-10 rounded-lg bg-cover object-cover"
-              src="/image/Redes/3.jpg"
-              alt="office content 2" data-aos="fade-left"
+              src="/image/Redes/gestion-cableado-estructurado-sistemas.jpg"
+              alt="Primer plano de cableado estructurado en azul conectado a equipo de red" data-aos="fade-left"
             />
           </div>
         </div>
       </section>
+      <Social /> 
       <Footer />
     </>
   );

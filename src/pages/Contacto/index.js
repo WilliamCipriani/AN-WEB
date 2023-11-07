@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Head from "next/head";
 import { useState } from "react";
 import { Inter } from "next/font/google";
 import Header from "@/components/Header";
@@ -54,6 +54,11 @@ export default function Contacto() {
 
     return (
         <>
+        <Head>
+            <title>Contáctanos - Asesoría y Soporte Técnico | Consultoría IT AN</title>
+            <meta name="description" content="Necesitas asesoría experta o soporte técnico? Contacta con Consultoría IT AN para soluciones tecnológicas rápidas y confiables" />
+            <link rel="canonical" href="https://an-web.vercel.app/contacto"/>
+      </Head>
         <Header />
         <div className="h-full bg-white mt-20">
             <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">

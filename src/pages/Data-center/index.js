@@ -1,3 +1,4 @@
+import Head from "next/head";
 import {
   LockClosedIcon,
   WrenchScrewdriverIcon,
@@ -8,6 +9,7 @@ import { useState } from "react";
 import { Inter } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Social from "@/components/Social";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -56,6 +58,11 @@ export default function DataCenter() {
 
   return (
     <>
+      <Head>
+        <title>Consultoría IT AN| Expertos en Arquitectura de Redes y Tecnología</title>
+        <meta name="description" content="Descubre con Consultoría IT AN cómo una arquitectura de redes eficiente y un diseño estratégico pueden transformar la infraestructura de tu empresa." />
+        <link rel="canonical" href="https://an-web.vercel.app/data-center"/>
+      </Head>
       <Header />
       <div className="overflow-hidden bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -231,6 +238,8 @@ export default function DataCenter() {
           </div>
         </div>
       </section>
+
+      <Social /> 
       <Footer />
     </>
   );

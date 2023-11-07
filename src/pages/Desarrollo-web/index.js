@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Head from "next/head";
 import { useState } from "react";
 import {
   LockClosedIcon,
@@ -9,6 +9,7 @@ import {
 import { Inter } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Social from "@/components/Social";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -42,9 +43,18 @@ const features = [
 export default function DesarrolloWeb() {
   const [activeIndex, setActiveIndex] = useState(0);
   const images = [
-    "/image/Desarrollo-web/1.jpg",
-    "/image/Desarrollo-web/2.jpg",
-    "/image/Desarrollo-web/3.jpg",
+    {
+      src: "/image/Desarrollo-web/trabajo-codigo-desarrollo-web.jpg",
+      alt: "Laptop mostrando código fuente, lugar de trabajo para desarrollo de sitios web."
+    },
+    {
+      src: "/image/Desarrollo-web/desarrollador-web-en-accion.jpg",
+      alt: "Desarrollador profesional trabajando en código de desarrollo web en un ambiente de oficina."
+    },
+    {
+      src: "/image/Desarrollo-web/enfoque-programacion-desarrollo-web.jpg",
+      alt: "Vista a través de gafas enfocando código en pantallas, simbolizando la claridad en el desarrollo web."
+    }
   ];
 
   const handleNext = () => {
@@ -59,6 +69,11 @@ export default function DesarrolloWeb() {
 
   return (
     <>
+      <Head>
+        <title>Desarrollo de Software Personalizado | Consultoría IT AN</title>
+        <meta name="description" content="Sumérgete en el desarrollo web que marca tendencia. Creamos sitios que capturan tu esencia y ofrecen una experiencia de usuario sin igual." />
+        <link rel="canonical" href="https://an-web.vercel.app/desarollo-web"/>
+      </Head>
       <Header />
       <div className="overflow-hidden bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -87,14 +102,13 @@ export default function DesarrolloWeb() {
 
             <div id="animation-carousel" className="relative w-full" style={{ width: "40rem", height: "30rem" }}>
               <div className="relative h-full overflow-hidden rounded-lg">
-                {images.map((src, index) => (
+                {images.map((image, index) => (
                   <div key={index} className={`${activeIndex === index ? 'block' : 'hidden'} duration-200 ease-linear`} data-carousel-item>
                     <img 
-                      src={src} 
+                      src={image.src} 
                       className={`absolute block w-full h-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 object-cover`} 
-                      alt={`Imagen ${index + 1}`} 
+                      alt={image.alt}
                       style={{ width: "40rem", height: "30rem" }}
-                      
                       />
                   </div>
                 ))}
@@ -231,17 +245,19 @@ export default function DesarrolloWeb() {
           <div className="grid grid-cols-2 gap-4 mt-8 ">
             <img
               className="w-full h-96 rounded-lg bg-cover object-cover"
-              src="/image/Desarrollo-web/2.jpg"
-              alt="office content 1" data-aos="fade-down"
+              src="/image/Desarrollo-web/desarrollador-web-en-accion.jpg"
+              alt="Desarrollador profesional trabajando en código de desarrollo web en un ambiente de oficina." data-aos="fade-down"
             />
             <img
               className="mt-4 w-full h-96 lg:mt-10 rounded-lg bg-cover object-cover"
-              src="/image/Desarrollo-web/3.jpg"
-              alt="office content 2" data-aos="fade-left"
+              src="/image/Desarrollo-web/enfoque-programacion-desarrollo-web.jpg"
+              alt="Vista a través de gafas enfocando código en pantallas, simbolizando la claridad en el desarrollo web" data-aos="fade-left"
             />
           </div>
         </div>
       </section>
+
+      <Social /> 
       <Footer />
     </>
   );

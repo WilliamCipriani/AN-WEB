@@ -19,7 +19,7 @@ function Social() {
             aria-controls="speed-dial-menu-default"  
         >
             <div id="speed-dial-menu-default" className={`flex flex-col items-center mb-4 space-y-2`}>
-                <img src="/image/social.png" className="w-15" alt="icono del whatsapp" width={90} height={90}/>
+                <img src="/image/social.png" className="w-15" alt="icono de whatsapp" width={90} height={90}/>
                 <span className="sr-only">Whatsapp</span>
                 <div id="tooltip-share" role="tooltip" className="absolute z-10 inline-block w-auto px-3 py-2 text-sm font-medium text-gray transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip">
                     Whatsapp

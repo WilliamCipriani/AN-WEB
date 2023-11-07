@@ -4,9 +4,11 @@ import {
     LightBulbIcon,
     AcademicCapIcon,
 } from "@heroicons/react/20/solid";
+import Head from "next/head";
 import { Inter } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Social from "@/components/Social";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -42,7 +44,12 @@ export default function Contacto() {
 
   
     return (
-        <>
+        <>  
+            <Head>
+                <title>Consultoría IT & Desarrollo AN | Líderes en Análisis de Datos </title>
+                <meta name="description" content="En Consultoría IT & Desarrollo AN, fusionamos tecnología avanzada con sostenibilidad para crear soluciones innovadoras en análisis de datos" />
+                <link rel="canonical" href="https://an-web.vercel.app/analisis-datos"/>
+            </Head>
             <Header />
             <div className="overflow-hidden bg-white py-24 sm:py-32">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -119,6 +126,7 @@ export default function Contacto() {
                     </div>
                 </div>
             </section>
+            <Social /> 
             <Footer />
         </>
 );
