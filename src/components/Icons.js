@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 function Icons() {
     const IconSvgs = [
@@ -60,8 +61,8 @@ function Icons() {
                 <div className="flex flex-col items-center justify-center" style={{ width: '310px', height: '184.4px' }}>
                 <div className="p-4" data-id="d38016c" data-element_type="widget" data-widget_type="icon-box.default">
                     <div className="flex flex-col items-center justify-center">
-                    <div className="w-21 h-21 rounded-full overflow-hidden flex items-center justify-center">
-                        <img src={IconSvg.image} alt='Imagen Descriptiva' className="object-cover rotate-on-hover"/> 
+                    <div className="rounded-full overflow-hidden flex items-center justify-center">
+                        <Image src={IconSvg.image} alt='Imagen Descriptiva' className="object-cover rotate-on-hover" width={110} height={110}/> 
                     </div>
                     <div className="mt-2 text-center text-sm" style={{ color: '#0E3147' }}>
                         <p>{IconSvg.text}</p>

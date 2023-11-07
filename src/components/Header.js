@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Link from 'next/link';
-import autoprefixer from "autoprefixer";
+import Image from "next/image";
 
 function Header() {
     const [isNavOpen, setIsNavOpen] = useState(false);
@@ -14,8 +14,13 @@ function Header() {
         <header className="bg-slate-50 border-b border-gray-200 fixed w-full z-20 top-0 left-0  ">
         <div className="w-full flex flex-wrap items-center justify-around mx-auto p-4">
             <div className="flex items-center flex-shrink-0 h-14 xs:h-10">
-                <img src="/image/index/an-servicios-tecnologicos-logo.png" className="h-14 sm:h-20 xs:h-10" alt="AN Logo" style={{ objectFit: 'contain' }}
-                    />
+                <Image src="/image/index/an-servicios-tecnologicos-logo.png" 
+                className="h-14 sm:h-20 xs:h-10 object-contain w-auto max-w-xs sm:max-w-sm" 
+                alt="AN Logo" 
+                style={{ objectFit: 'contain' }}
+                width={260}
+                height={200}
+                />
             </div>
             <div className="flex md:order-2 justify-end">
             <button
