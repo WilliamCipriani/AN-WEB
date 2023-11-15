@@ -54,7 +54,7 @@ export default function Contacto() {
             <div className="overflow-hidden bg-white py-24 sm:py-32">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-                    <div className="lg:pr-8 lg:pt-4">
+                    <div className="lg:pr-8 lg:pt-4" data-aos="fade-up">
                         <div className="lg:max-w-lg">
                         <span className="text-base font-semibold leading-7 text-indigo-600">
                             Servicios tecnológicos
@@ -86,8 +86,8 @@ export default function Contacto() {
             </div>
 
             <div className="bg-white py-24 sm:py-6">
-                <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                    <div className="mx-auto max-w-2xl lg:text-center">
+                <div className="mx-auto max-w-7xl px-6 lg:px-8" >
+                    <div className="mx-auto max-w-2xl lg:text-center" data-aos="fade-up">
                     <h2 className="mt-2 text-3xl font-bold tracking-tight text-custon-blue sm:text-4xl" >
                         ¿Qué hace una Consultora de Análisis de Datos?
                     </h2>
@@ -98,7 +98,7 @@ export default function Contacto() {
                     <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
                     <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
                         {features.map((feature) => (
-                        <div key={feature.name} className="relative pl-16">
+                        <div key={feature.name} className="relative pl-16" data-aos="fade-up">
                             <dt className="text-base font-semibold leading-7 text-gray-900">
                             <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-custom-orange">
                                 <feature.icon className="h-6 w-6 text-white" aria-hidden="true" />
@@ -115,7 +115,7 @@ export default function Contacto() {
 
             <section className="bg-white ">
                 <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-                    <div className="font-light text-gray-500 sm:text-lg ">
+                    <div className="font-light text-gray-500 sm:text-lg " data-aos="fade-up">
                         <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-custon-blue ">Servicios de Consultoría Analítica</h2>
                         <p className="mb-4 text-gray-700">En una era donde los datos son el activo más valioso, nuestra consultoría analítica se pone a la vanguardia, guiando a las empresas a navegar con éxito en el vasto océano de información disponible. Con una combinación única de experiencia técnica y estratégica, estamos listos para ayudarte a transformar datos crudos en insights estratégicos que pueden impulsar tu negocio hacia adelante.</p>
                         <p className="text-gray-700">Somos estrategas, diseñadores y desarrolladores. Innovadores y solucionadores de problemas. Lo suficientemente pequeño como para ser simple y rápido.</p>

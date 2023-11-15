@@ -45,16 +45,16 @@ export default function DesarrolloWeb() {
   const images = [
     {
       src: "/image/Desarrollo-web/trabajo-codigo-desarrollo-web.jpg",
-      alt: "Laptop mostrando código fuente, lugar de trabajo para desarrollo de sitios web."
+      alt: "Laptop mostrando código fuente, lugar de trabajo para desarrollo de sitios web.",
     },
     {
       src: "/image/Desarrollo-web/desarrollador-web-en-accion.jpg",
-      alt: "Desarrollador profesional trabajando en código de desarrollo web en un ambiente de oficina."
+      alt: "Desarrollador profesional trabajando en código de desarrollo web en un ambiente de oficina.",
     },
     {
       src: "/image/Desarrollo-web/enfoque-programacion-desarrollo-web.jpg",
-      alt: "Vista a través de gafas enfocando código en pantallas, simbolizando la claridad en el desarrollo web."
-    }
+      alt: "Vista a través de gafas enfocando código en pantallas, simbolizando la claridad en el desarrollo web.",
+    },
   ];
 
   const handleNext = () => {
@@ -71,22 +71,25 @@ export default function DesarrolloWeb() {
     <>
       <Head>
         <title>Desarrollo de Software Personalizado | Consultoría IT AN</title>
-        <meta name="description" content="Sumérgete en el desarrollo web que marca tendencia. Creamos sitios que capturan tu esencia y ofrecen una experiencia de usuario sin igual." />
-        <link rel="canonical" href="https://an-web.vercel.app/desarollo-web"/>
+        <meta
+          name="description"
+          content="Sumérgete en el desarrollo web que marca tendencia. Creamos sitios que capturan tu esencia y ofrecen una experiencia de usuario sin igual."
+        />
+        <link rel="canonical" href="https://an-web.vercel.app/desarollo-web" />
       </Head>
       <Header />
       <div className="overflow-hidden bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div className="lg:pr-8 lg:pt-4">
-              <div className="lg:max-w-lg">
-                <h2 className="text-base font-semibold leading-7 text-indigo-600">
+              <div className="lg:max-w-lg" >
+                <h2 className="text-base font-semibold leading-7 text-indigo-600" data-aos="fade-down">
                   Servicios tecnológicos
                 </h2>
-                <p className="mt-2 text-3xl font-bold tracking-tight text-custon-blue sm:text-4xl">
+                <p className="mt-2 text-3xl font-bold tracking-tight text-custon-blue sm:text-4xl" data-aos="fade-down">
                   Desarrollo Web.
                 </p>
-                <p className="mt-6 text-lg leading-8 text-gray-600 text-justify">
+                <p className="mt-6 text-lg leading-8 text-gray-600 text-justify" data-aos="fade-down">
                   En esta era digital, su sitio web es su tarjeta de visita, la
                   primera impresión que dejas en tus clientes potenciales.
                   Nuestros servicios de desarrollo web están dedicados a crear
@@ -95,21 +98,31 @@ export default function DesarrolloWeb() {
                   informativo o una plataforma de comercio electrónico dinámica,
                   creamos soluciones que no solo lucen bien, sino que también
                   funcionan a la perfección, asegurando que sus visitantes
-                  vuelvan por más. Además, destacamos por:
+                  vuelvan por más.
                 </p>
               </div>
             </div>
 
-            <div id="animation-carousel" className="relative w-full" style={{ width: "40rem", height: "30rem" }}>
-              <div className="relative h-full overflow-hidden rounded-lg">
+            <div
+              id="animation-carousel"
+              className="relative w-full"
+              style={{ width: "40rem", height: "30rem" }}
+            >
+              <div className="relative h-full overflow-hidden rounded-lg" >
                 {images.map((image, index) => (
-                  <div key={index} className={`${activeIndex === index ? 'block' : 'hidden'} duration-200 ease-linear`} data-carousel-item>
-                    <img 
-                      src={image.src} 
-                      className={`absolute block w-full h-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 object-cover`} 
+                  <div
+                    key={index}
+                    className={`${
+                      activeIndex === index ? "block" : "hidden"
+                    } duration-200 ease-linear`}
+                    data-carousel-item
+                  >
+                    <img
+                      src={image.src}
+                      className={`absolute block w-full h-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 object-cover`}
                       alt={image.alt}
                       style={{ width: "40rem", height: "30rem" }}
-                      />
+                    />
                   </div>
                 ))}
               </div>
@@ -170,22 +183,23 @@ export default function DesarrolloWeb() {
 
       <div className="bg-white py-24 sm:py-6">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:text-center">
-            <p className="mt-2 text-3xl font-bold tracking-tight text-custon-blue sm:text-4xl">
+          <div className="mx-auto max-w-2xl lg:text-center" >
+            <p className="mt-2 text-3xl font-bold tracking-tight text-custon-blue sm:text-4xl" data-aos="fade-up">
               ¿Qué hace una Consultora de Desarrollo Web?
             </p>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-6 text-lg leading-8 text-gray-600" data-aos="fade-up">
               Una consultora de desarrollo web asiste a empresas y
-              organizaciones en la creación y optimización de sitios web y
-              aplicaciones online. Se encargan de conceptualizar, diseñar e
+              organizaciones en la creación y optimización de sitios web. Se encargan de conceptualizar, diseñar e
               implementar soluciones web que se alinean con los objetivos y la
-              identidad de la marca de un cliente.
+              identidad de la marca de un cliente. Además, incorporamos las
+              últimas tecnologías para darle vida al diseño y hacerlo versátil y
+              flexible.
             </p>
           </div>
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
             <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
               {features.map((feature) => (
-                <div key={feature.name} className="relative pl-16">
+                <div key={feature.name} className="relative pl-16" data-aos="fade-down">
                   <dt className="text-base font-semibold leading-7 text-gray-900">
                     <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-custom-orange">
                       <feature.icon
@@ -207,7 +221,7 @@ export default function DesarrolloWeb() {
 
       <section className="bg-white ">
         <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-          <div className="font-light text-gray-500 sm:text-lg ">
+          <div className="font-light text-gray-500 sm:text-lg " data-aos="fade-up">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-custon-blue ">
               Nuestros Servicios
             </h2>
@@ -246,18 +260,20 @@ export default function DesarrolloWeb() {
             <img
               className="w-full h-96 rounded-lg bg-cover object-cover"
               src="/image/Desarrollo-web/desarrollador-web-en-accion.jpg"
-              alt="Desarrollador profesional trabajando en código de desarrollo web en un ambiente de oficina." data-aos="fade-down"
+              alt="Desarrollador profesional trabajando en código de desarrollo web en un ambiente de oficina."
+              data-aos="fade-down"
             />
             <img
               className="mt-4 w-full h-96 lg:mt-10 rounded-lg bg-cover object-cover"
               src="/image/Desarrollo-web/enfoque-programacion-desarrollo-web.jpg"
-              alt="Vista a través de gafas enfocando código en pantallas, simbolizando la claridad en el desarrollo web" data-aos="fade-left"
+              alt="Vista a través de gafas enfocando código en pantallas, simbolizando la claridad en el desarrollo web"
+              data-aos="fade-left"
             />
           </div>
         </div>
       </section>
 
-      <Social /> 
+      <Social />
       <Footer />
     </>
   );

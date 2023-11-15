@@ -68,7 +68,7 @@ export default function DataCenter() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div className="lg:pr-8 lg:pt-4">
-              <div className="lg:max-w-lg">
+              <div className="lg:max-w-lg" data-aos="fade-up">
                 <h2 className="text-base font-semibold leading-7 text-indigo-600">
                   Servicios tecnológicos
                 </h2>
@@ -169,7 +169,7 @@ export default function DataCenter() {
 
       <div className="bg-white py-24 sm:py-6">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:text-center">
+          <div className="mx-auto max-w-2xl lg:text-center" data-aos="fade-up">
             <p className="mt-2 text-3xl font-bold tracking-tight text-custon-blue sm:text-4xl">
               ¿Qué hace una Consultora e Implementación de Data Center?
             </p>
@@ -185,7 +185,7 @@ export default function DataCenter() {
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
             <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
               {features.map((feature) => (
-                <div key={feature.name} className="relative pl-16">
+                <div key={feature.name} className="relative pl-16" data-aos="fade-up">
                   <dt className="text-base font-semibold leading-7 text-gray-900">
                     <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-custom-orange">
                       <feature.icon
@@ -207,7 +207,7 @@ export default function DataCenter() {
 
       <section className="bg-white ">
         <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-          <div className="font-light text-gray-500 sm:text-lg ">
+          <div className="font-light text-gray-500 sm:text-lg " data-aos="fade-up">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-custon-blue">
               Servicios de Consultoría de Data Center
             </h2>

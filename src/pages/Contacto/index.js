@@ -2,6 +2,8 @@ import Head from "next/head";
 import { useState } from "react";
 import { Inter } from "next/font/google";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import Social from "@/components/Social";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -159,6 +161,8 @@ export default function Contacto() {
                 </form>
             </div>
         </div>
+        <Social />
+        <Footer />
         </>
     );
 }
